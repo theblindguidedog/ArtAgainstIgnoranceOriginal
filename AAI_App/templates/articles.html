@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="showcase-section blog-section blog section-padding before-after bg-white">
+    <div class="section-title">
+        <i class="fa fa-file-o"></i>
+        <h2>Latest Articles</h2>
+       <ul class="list-inline">
+           <li><a href="{% url 'artist_details_briangervaise' %}"><i class="fa fa-user"></i>By  <span>Brian Gervaise</span> </a></li>
+           <li><a href="{% url 'article_details_utopians' %}"><i class="fa fa-camera"></i>1 post</a></li>
+       </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="entry-post">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/articles/omni-q.png' %}" alt="Image">
+                    </div>
+                    <div class="post-content">
+                        <div class="time">
+                            <a href="{% url 'article_details_utopians' %}">19 <span>feb</span></a>
+                        </div>
+                        <div class="entry-title">
+                           <a href="{% url 'article_details_utopians' %}">Why The Utopians</a>
+                       </div> 
+                       <p>I get asked this question all the time. The truth is that...</p>
+                       <div class="post-icons">
+                           <a href="{% url 'article_details_utopians' %}"><i class="fa fa-chevron-circle-right"></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="entry-post">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="{% static 'AAI_App/images/blog/2.jpg' %}" alt="Image">
+                    </div>
+                    <div class="post-content">
+                        <div class="time">
+                            <a href="#">19 <span>feb</span></a>
+                        </div>
+                        <div class="entry-title">
+                           <a href="{% url 'article_details' %}">Lorem ipsum dolor sit adipisicing</a>
+                       </div> 
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                       <div class="post-icons">
+                           <a href="{% url 'article_details' %}"><i class="fa fa-chevron-circle-right"></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="entry-post">
+                    <div class="entry-thumbnail">
+                        <img class="img-responsive" src="{% static 'AAI_App/images/blog/3.jpg' %}" alt="Image">
+                    </div>
+                    <div class="post-content">
+                        <div class="time">
+                            <a href="#">19 <span>feb</span></a>
+                        </div>
+                        <div class="entry-title">
+                           <a href="{% url 'article_details' %}">Lorem ipsum dolor sit adipisicing</a>
+                       </div> 
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                       <div class="post-icons">
+                           <a href="{% url 'article_details' %}"><i class="fa fa-chevron-circle-right"></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div> 
+        </div><!-- row -->
+        <div class="row text-center">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="{% url 'articles' %}" aria-label="Previous">
+                        <span aria-hidden="true">&#8249;</span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="{% url 'articles' %}">1</a></li>
+                    <li>
+                        <a href="{% url 'articles' %}" aria-label="Next">
+                        <span aria-hidden="true">&#8250;</span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>                     
+        </div>                
+    </div><!-- container -->           
+</div><!-- blog section -->
+
+{% endblock %}

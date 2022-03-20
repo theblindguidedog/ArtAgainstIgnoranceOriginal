@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="artist-detail before-after section-padding bg-white">
+    <div class="artist-detail-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="artist-image">
+                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/scottgervaise-379x558.png' %}" alt="scottgervaise-379x558.png">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="artist-info">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul> 
+                        <h1>Scott Gervaise</h1> 
+                        <h4>Writer/Musician - Web Designer</h4>  
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>   
+                        <address>
+                            <ul class="menu">
+                                <li><h5>Name: </h5>Scott Gervaise</li>
+                                <li><h5>Occupation: </h5>Web Designer</li>
+                                <li><h5>Birth Date: </h5>June 7, 1967 (age 54)</li>
+                                <li><h5>Education: </h5>Hurstville Boys Highschool,</li>
+                            </ul>
+                            <ul class="menu sub">
+                                <li><h5>Place of Birth: </h5>Kirkcaldy, Scotland</li>
+                                <li><h5>Home town: </h5>Bellambi, NSW, Australia</li>
+                                <li><h5>Zodiac Sign: </h5>Scorpio</li>
+                            </ul>
+                        </address>                     
+                    </div>
+                </div>
+            </div><!-- row -->
+
+            <div class="row text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="{% url 'artist_details_darceygervaise' %}" aria-label="Previous">
+                            <span aria-hidden="true">&#8249;</span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li><a href="{% url 'artist_details_briangervaise' %}">1</a></li>
+                        <li><a href="{% url 'artist_details_zacharygervaise' %}">2</a></li>
+                        <li><a href="{% url 'artist_details_darceygervaise' %}">3</a></li>
+                        <li class="active"><a href="{% url 'artist_details_scottgervaise' %}">4</a></li>
+                        <li><a href="{% url 'artist_details_wally' %}">5</a></li>
+                        <li><a href="{% url 'artist_details_johnno' %}">6</a></li>
+                        <li><a href="{% url 'artist_details_ganna' %}">7</a></li>
+                        <li><a href="{% url 'artist_details_nerdyrodent' %}">8</a></li>
+                        <li><a href="{% url 'artist_details_blatantblathiest' %}">9</a></li>
+                        <li>
+                            <a href="{% url 'artist_details_wally' %}" aria-label="Next">
+                            <span aria-hidden="true">&#8250;</span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>                     
+            </div>
+
+        </div><!-- container -->
+    </div><!-- artist detail content -->
+</div><!-- artist detail -->
+
+{% endblock %}

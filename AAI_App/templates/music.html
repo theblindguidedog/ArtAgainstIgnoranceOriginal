@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="extra"></div>
+<div class="showcase-section audio-album section-padding before-after bg-white">
+    <div class="album-content section-title">
+        <i class="fa fa-file-audio-o"></i>
+        <h2>Music</h2>
+       <ul class="list-inline">
+           <li><a href="{% url 'artist_details_blatantblathiest' %}"><i class="fa fa-user"></i>By  <span>Blatant Blathiest</span> </a></li>
+           <li><a href="{% url 'artist_details_blatantblathiest' %}"><i class="fa fa-camera"></i>1 song</a></li>
+       </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-content">
+                    <div class="album-image">
+                        <a href="{% url 'artist_details_blatantblathiest' %}"><img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/blatant_blathiest-270x310.jpeg' %}" alt="Image"></a>
+                    </div> 
+                    <h1>Dear Mother Nature</h1>
+                    <a href="{% url 'artist_details_blatantblathiest' %}"><h2>Blatant Blathiest</h2></a>
+                    <!--form.html was here-->
+                </div>                                               
+            </div>
+            <div class="col-sm-9">
+                <div id="jp-container">
+                    <div id="jplayer"></div>
+                    <div class="jp-content">
+                        <div id="playing"></div>
+                            <ul class="jp-controls">
+                                <li><a href="javascript:;" class="jp-play" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/3.png' %}" alt="Image"></a></li>
+                                <li><a href="javascript:;" class="jp-pause" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/5.png' %}" alt="Image"></a></li>
+                            </ul> 
+                        <div class="jp-interface">
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar">
+                                        <b></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jp-current-time"></div>
+                        </div>
+                    </div>
+                    <div class="jp-playlist">
+                        <ul>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>                
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+ </div><!-- album content -->   
+</div><!-- audio album -->
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="breadcrumb bg-image">
+    <div class="overlay"></div>
+    <div class="page-title">
+        <h1>Follow Our</h1>
+        <h2>Articles & Stuff</h2>
+    </div>
+</div><!-- breadcrumb --> 
+
+<div class="blog-details before-after bg-white">
+    <div class="container">
+        <div class="entry-post">
+            <div class="entry-thumbnail">
+                <img class="img-responsive" src="{% static 'AAI_App/aai_images/articles/The_Utopians_Abbey_Rd.png' %}" alt="Image">
+            </div>
+            <div class="post-content">
+                <div class="time">
+                    <a href="{% url 'article_details' %}">19 <span>feb</span></a>
+                </div>
+                <div class="entry-title">
+                   <h1>Why The Utopians</h1>
+               </div> 
+               <ul class="entry-meta list-inline">
+                   <li><a href="{% url 'article_details' %}"><i class="fa fa-user"></i>By  Brian Gervaise </a></li>
+                   <!-- clock.html was here -->
+               </ul>
+            </div>
+        </div>
+
+        <div class="entry-summary">
+            <p>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+
+        <div class="blog-social list-inline">
+            <ul class="list-inline">
+                <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/11.jpg' %}" alt="11.jpg"></a></li>
+                <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/12.jpg' %}" alt="12.jpg"></a></li>
+                <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/13.jpg' %}" alt="13.jpg"></a></li>
+                <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/14.jpg' %}" alt="14.jpg"></a></li>
+            </ul>
+        </div>
+    </div><!-- container -->         
+</div><!-- blog details-->
+
+{% endblock %}

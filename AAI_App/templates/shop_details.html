@@ -1,0 +1,383 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+        <div class="breadcrumb bg-image">
+            <div class="overlay"></div>
+            <div class="page-title">
+                <h1>Art Against Ignorance</h1>
+                <h2>Shop</h2>
+            </div>
+        </div><!-- breadcrumb -->
+         
+        <div class="products-details section-padding before-after bg-white">
+            <div class="products-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="products-slider">
+                                <div class="products-image">
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/shop/12.png' %}" alt="Image">
+                                </div>
+                                <div class="products-image">
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/shop/13.png' %}" alt="Image">
+                                </div>
+                                <div class="products-image">
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/shop/14.png' %}" alt="Image">
+                                </div>
+                                <div class="products-image">
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/shop/15.png' %}" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h1>Availability: <span>In stock</span></h1>
+                            <h2>T-Shirt</h2>
+                            <h3>$30.00</h3>
+
+                            <form class="cart" method="post">
+                                <div class="color">
+                                    <h3>Color</h3>
+                                    <input type="radio" name="sellType" value="color1" id="color1"><label for="color1"></label>
+                                    <input type="radio" name="sellType" value="color2" id="color2"><label for="color2"></label> 
+                                    <input type="radio" name="sellType" value="color3" id="color3"><label for="color3"></label> 
+                                    <input type="radio" name="sellType" value="color4" id="color4"><label for="color4"></label> 
+                                    <input type="radio" name="sellType" value="color5" id="color5"><label for="color5"></label> 
+                                </div>                                
+                                <div class="quantity" data-trigger="spinner">
+                                    <h3>Quantity:</h3>
+                                    <input type="text" name="quantity" value="1" title="quantity" class="input-text">
+                                    <a class="btn btn-default" href="javascript:;" data-spin="up"><i class="fa fa-angle-up"></i></a>
+                                    <a class="btn btn-default" href="javascript:;" data-spin="down"><i class="fa fa-angle-down"></i></a>
+                                </div>  
+                                <div class="add-buttons">
+                                    <button type="submit" class="cart-button button"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                    <button type="submit" class="wishlist-button button"><i class="fa fa-star-o"></i>Add to Wishlist</button>
+                                </div>
+                            </form>                            
+                            <div class="share">
+                                <h3>Share This Deal</h3>
+                                <ul class="list-inline">
+                                    <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/11.jpg' %}" alt="Image"></a></li>
+                                    <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/12.jpg' %}" alt="Image"></a></li>
+                                    <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/13.jpg' %}" alt="Image"></a></li>
+                                    <li><a href="#"><img class="img-responsive" src="{% static 'AAI_App/images/blog/14.jpg' %}" alt="Image"></a></li>
+                                </ul>                            
+                            </div>                       
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- products content -->
+        </div><!-- products details -->
+
+        <div class="products-description section-padding before-after bg-white">
+            <div class="description-content">
+                <div class="container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Product Description</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Product Conditions </a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"> Product Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="short-info">
+                                        <h5>Short Info</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architect.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="additional-info">
+                                        <h5>Additional Information</h5>
+                                        <ul class="product-menu">
+                                            <li>Product Name: Rock n roll</li>
+                                            <li>Fabric: 160+ GSM</li>
+                                            <li>Print: Premium screen rubber</li>
+                                            <li>Long lasting prints (100-W)</li>
+                                            <li>Soft touch</li>
+                                            <li>100% cotton</li>
+                                            <li>Regular washable 40`</li>
+                                            <li>Export quality</li>
+                                            <li>QC approved</li>
+                                        </ul>
+                                        <ul class="product-menu sub">
+                                            <li>100% cotton</li>
+                                            <li>Regular washable 40`</li>
+                                            <li>Export quality</li>
+                                            <li>Made in USA</li>
+                                            <li>QC approved</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="additional-info">
+                                        <h5>Product Conditions</h5>
+                                        <ul class="product-menu">
+                                            <li>Product Name: Rock n roll</li>
+                                            <li>Fabric: 160+ GSM</li>
+                                            <li>Print: Premium screen rubber</li>
+                                            <li>Long lasting prints (100-W)</li>
+                                            <li>Soft touch</li>
+                                            <li>100% cotton</li>
+                                            <li>Regular washable 40`</li>
+                                            <li>Export quality</li>
+                                            <li>QC approved</li>
+                                        </ul>
+                                        <ul class="product-menu sub">
+                                            <li>100% cotton</li>
+                                            <li>Regular washable 40`</li>
+                                            <li>Export quality</li>
+                                            <li>Made in USA</li>
+                                            <li>QC approved</li>
+                                        </ul>
+                                    </div>
+                                </div>                            
+                                <div class="col-sm-6">
+                                    <div class="short-info">
+                                        <h5>Short Info</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architect.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <div class="container">
+                            <div class="row">                           
+                                <div class="col-sm-6">
+                                    <div class="product-reviews">
+                                        <div class="additional-info">
+                                            <h5>Based on 3 reviews</h5>
+                                        </div>
+                                        <div class="rating-number">
+                                            <p><span>4.3</span>overall</p>
+                                        </div>                                    
+                                        <div class="rating-bar">
+                                            <div class="skill-progress">
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                                                    </div>
+                                                </div>
+                                                <div class="rating-count">1</div>
+                                            </div>
+                                            <div class="skill-progress">
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>                                            
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                                    </div>
+                                                </div>
+                                                <div class="rating-count">2</div>
+                                            </div>
+                                            <div class="skill-progress">
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>                                            
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" >
+                                                    </div>
+                                                </div>
+                                                <div class="rating-count">0</div>
+                                            </div>
+                                            <div class="skill-progress">
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>                                            
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" >
+                                                    </div>
+                                                </div>
+                                                <div class="rating-count">0</div>
+                                            </div>
+                                            <div class="skill-progress">
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>                                            
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" >
+                                                    </div>
+                                                </div>
+                                                <div class="rating-count">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-info">
+                                                <div class="author">
+                                                    <p>Ryan Putnam</p>
+                                                </div>
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>    
+                                                <div class="time">
+                                                    <p>jun 18, 2016</p>
+                                                </div>
+                                            </div>    
+                                            <div class="description">                           
+                                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eget facilisis odio. Duis sodales augue eu tincidunt faucibus. Etiam justo ligula, placerat ac augue id, volutpat porta dui.</p>
+                                            </div>                           
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-info">
+                                                <div class="author">
+                                                    <p>Ryan Putnam</p>
+                                                </div>
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>    
+                                                <div class="time">
+                                                    <p>jun 22, 2016</p>
+                                                </div>
+                                            </div>    
+                                            <div class="description">                           
+                                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eget facilisis odio. Duis sodales augue eu tincidunt faucibus. Etiam justo ligula, placerat ac augue id, volutpat porta dui.</p>
+                                            </div>                           
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-info">
+                                                <div class="author">
+                                                    <p>Ryan Putnam</p>
+                                                </div>
+                                                <ul class="star-rating">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>    
+                                                <div class="time">
+                                                    <p>jun 28, 2016</p>
+                                                </div>
+                                            </div>    
+                                            <div class="description">                           
+                                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eget facilisis odio. Duis sodales augue eu tincidunt faucibus. Etiam justo ligula, placerat ac augue id, volutpat porta dui.</p>
+                                            </div>                           
+                                        </div>
+                                    </div>
+                                </div>                           
+                                <div class="col-sm-6">
+                                    <div class="short-info">
+                                        <h5>Add a review</h5>
+                                        <form id="contact-form" class="contact-form" name="contact-form" action="#">
+                                            <div class="rating-star">
+                                                <div class="rating">
+                                                <h6>Your Rating</h6>
+                                                    <input type="radio" id="star1" name="rating" /><label class = "full" for="star1"></label>
+
+                                                    <input type="radio" id="star2" name="rating"/><label class="half" for="star2"></label>
+
+                                                    <input type="radio" id="star3" name="rating"/><label class ="full" for="star3"></label>
+
+                                                    <input type="radio" id="star4" name="rating"/><label class="half" for="star4"></label>
+
+                                                    <input type="radio" id="star5" name="rating"/><label class ="full" for="star5"></label>
+
+                                                    <input type="radio" id="star6" name="rating"/><label class="half" for="star6"></label>
+
+                                                    <input type="radio" id="star7" name="rating"/><label class ="full" for="star7"></label>
+
+                                                    <input type="radio" id="star8" name="rating"/><label class="half" for="star8"></label>
+
+                                                    <input type="radio" id="star9" name="rating"/><label class ="full" for="star9"></label>
+
+                                                    <input type="radio" id="star10" name="rating"/><label class="half" for="star10"></label>
+                                                </div>
+                                            </div>                                          
+                                            <div class="form-group review">
+                                                <label for="four">Your Review</label>
+                                                <textarea name="message" required="required" class="form-control" rows="7" id="four"></textarea>
+                                            </div>             
+
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn btn-primary pull-right">Add Review</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- description content -->
+        </div><!-- products-tabs --> 
+
+        <div class="related-products section-padding before-after bg-white">
+            <div class="product-content text-center">
+                <h1>Related Products</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="products">
+                                <a href="#">Asylum Music CD</a>
+                                <h5>$30.00</h5>
+                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                <a href="#"><img  class="img-responsive" src="{% static 'AAI_App/images/shop/4.png' %}" alt="Image"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="products">
+                                <a href="#">T-Shirt</a>
+                                <h5>$30.00</h5>
+                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                <a href="#"><img  class="img-responsive" src="{% static 'AAI_App/images/shop/4.png' %}" alt="Image"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="products">
+                                <a href="#">Hiphop Cap</a>
+                                <h5>$10.00</h5>
+                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                <a href="#"><img  class="img-responsive" src="{% static 'AAI_App/images/shop/6.png' %}" alt="Image"></a>
+                            </div>
+                        </div>
+                    </div><!-- row -->  
+                </div><!-- container -->
+            </div><!-- product content -->          
+        </div><!-- related products -->
+
+       {% endblock %}

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="showcase-section blog-section blog section-padding before-after  bg-white">
+    <div class="section-title">
+        <i class="fa fa-file-video-o"></i>
+        <h2>Videos</h2>
+       <ul class="list-inline">
+           <li><a href="#"><i class="fa fa-user"></i>By  <span>Art Against Ignorance</span> </a></li>
+           <li><a href="#"><i class="fa fa-camera"></i>3 videos</a></li>
+       </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="showcase">
+                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-440x295.png' %}" alt="say-no-440x295.png">
+                    <div class="showcase-overlay">
+                        <div class="showcase-icons">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=VJcncuZnwA8"><i class="fa fa-youtube-play"></i></a>
+                        </div>                            
+                        <div class="showcase-info">
+                            <h3>Life Amazing</h3>
+                            <h5>Art Against Ignorance</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="showcase">
+                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-440x295.png' %}" alt="wiyw-440x295.png">
+                    <div class="showcase-overlay">
+                        <div class="showcase-icons">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=k6ExxvIfMeQ"><i class="fa fa-youtube-play"></i></a>
+                        </div>                            
+                        <div class="showcase-info">
+                            <h3>What if You're Wrong</h3>
+                            <h5>Art Against Ignorance</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="showcase">
+                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I_cant_lie_to_myself-440x295.png' %}" alt="I_cant_lie_to_myself-440x295.png">
+                    <div class="showcase-overlay">
+                        <div class="showcase-icons">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=sFUB0niLaWQ"><i class="fa fa-youtube-play"></i></a>
+                        </div>                            
+                        <div class="showcase-info">
+                            <h3>Art Against Ignorance</h3>
+                            <h5>I Can't Lie To Myself</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row -->
+        <div class="row text-center">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="{% url 'video' %}" aria-label="Previous">
+                        <span aria-hidden="true">&#8249;</span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="{% url 'video' %}">1</a></li>
+                    <li>
+                        <a href="{% url 'video' %}" aria-label="Next">
+                        <span aria-hidden="true">&#8250;</span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>                     
+        </div><!-- row -->                 
+    </div><!-- container -->
+</div><!-- showcase section --> 
+
+
+{% endblock %}

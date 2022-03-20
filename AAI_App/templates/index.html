@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="gallery-section gallery-block section-padding before">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="video-gallery">
+                    <div class="section-title">
+                        <a href="{% url 'video' %}"><h1>Videos</h1></a>
+                        <a href="{% url 'video' %}"><h2>Latest</h2></a>
+                    </div>                           
+                    <div class="gallery-tab">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="one">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-661x382.png' %}" alt="say-no-661x382.png">
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=VJcncuZnwA8"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="two">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-661x382.png' %}" alt="wiyw-661x382.png">
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=k6ExxvIfMeQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="1.png"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="three">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" alt="I-cant-lie-to-myself-661x382.png">
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=sFUB0niLaWQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="four">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" alt="I-cant-lie-to-myself-661x382.png">
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=sFUB0niLaWQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-115x109.png' %}" alt="Image">
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>    
+                                    <h5>Life Amazing<span>2005</span></h5>
+                                </div>
+                            </a></li>
+                            <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-115x109.png' %}" alt="Image">
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>What if You're Wrong <span>2021</span></h5>
+                                </div>
+                            </a></li>
+                            <li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" alt="Image">
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>I can't Lie to Myself <span>2021</span></h5>
+                                </div>
+                            </a></li>
+                            <li role="presentation"><a href="#four" aria-controls="four" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" alt="Image">
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>I can't Lie to Myself <span>2021</span></h5>
+                                </div>
+                            </a></li>
+                        </ul>    
+                    </div> <!-- gallery tab --> 
+                </div>
+            </div>
+            <div class="col-sm-6">                       
+                <div class="festival-schedule live-shows">
+                    <div class="section-title">
+                        <a href="{% url 'articles' %}"><h1>Articles</h1></a>
+                        <a href="{% url 'articles' %}"><h2>& Stuff</h2></a>
+                    </div>
+                    <div class="tab-content">
+                        <ul>
+                            <li class="festival-info">
+                                <div class="festival-image">
+                                    <a href="{% url 'article_details_utopians' %}"><div class="image-overlay"></div></a>
+                                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/gallery/The_Utopians_Abbey_Rd-150x183.png' %}" alt="Image">
+                                    <div class="time">
+                                        <a href="{% url 'article_details_utopians' %}"><h1>19<span>Feb</span></h1></a>
+                                    </div>                                        
+                                </div>
+                                <div class="text-left">
+                                    <a href="{% url 'article_details_utopians' %}"><h2>Why The Utopians</h2></a>
+                                    <a href="{% url 'article_details_utopians' %}"><h5>Brian Gervaise</h5></a>
+                                </div>
+                            </li>
+                            <li class="festival-info ">
+                                <div class="festival-image">
+                                    <div class="image-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/gallery/18.jpg' %}" alt="Image">
+                                    <div class="time">
+                                        <h1><span></span></h1>
+                                    </div>
+                                </div>
+                                <div class="text-left">
+                                    <h2>More Stuff</h2>
+                                    <h5>Coming Soon</h5>
+                                </div>
+                            </li>
+                            <li class="festival-info ">
+                                <div class="festival-image">
+                                    <div class="image-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/gallery/19.jpg' %}" alt="Image">
+                                    <div class="time">
+                                        <h1><span></span></h1>
+                                    </div>                                        
+                                </div>
+                                <div class="text-left">
+                                    <h2>More Stuff</h2>
+                                    <h5>Coming Soon</h5>
+                                </div>
+                            </li>
+                            <li class="festival-info ">
+                                <div class="festival-image">
+                                    <div class="image-overlay"></div>
+                                    <img  class="img-responsive" src="{% static 'AAI_App/images/gallery/20.jpg' %}" alt="Image">
+                                    <div class="time">
+                                        <h1><span></span></h1>
+                                    </div>                                        
+                                </div>
+                                <div class="text-left">
+                                    <h2>More Stuff</h2>
+                                    <h5>Coming Soon</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- tab-content -->
+                </div> <!-- festival-schedule -->
+            </div> <!-- col-sm-6 -->
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- gallery section --> 
+
+
+<div class="about-section about section-padding before-after">
+
+    <div class="section-title" id="index_artists">
+        <a href="{% url 'artists' %}"><h1>Artists</h1></a>
+        <a href="{% url 'artists' %}"><h2>Meet the Guys</h2></a>
+    </div>
+    <div class="about-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.png' %}" alt="darceygervaise-315x475.png">
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_darceygervaise2' %}">Darcey</a>
+                            <h6>Producer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/ganna-315x475.png' %}" alt="ganna-315x475.png">
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_ganna2' %}">Ganna</a>
+                            <h6>Cartoonist</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblathiest-315x475.png' %}" alt="blatantblathiest-315x475.png">
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_blatantblathiest2' %}">Blatant Blathiest</a>
+                            <h6>Rap Artist</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/nerdyrodent-315x475.png' %}" alt="nerdyrodent-315x475.png">
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_nerdyrodent2' %}">Nerdy Rodent</a>
+                            <h6>Digital Artist</h6>
+                        </div>
+                    </div>
+                </div>                    
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- about content -->
+</div><!-- about section -->
+
+
+<div class="audio-album bg-white section-padding before-after">
+
+    <div class="section-title" id="index_music">
+        <a href="{% url 'music' %}"><h1>Music</h1></a>
+        <a href="{% url 'music' %}"><h2>More Coming Soon</h2></a>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-content">
+                    <div class="album-image">
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/blatant_blathiest-270x310.jpeg' %}" alt="Image">
+                    </div> 
+                    <h1>Dear Mother Nature</h1>
+                    <h2>Blatant Blathiest</h2>
+                    <!--form.html was here-->
+                </div>                                               
+            </div>
+            <div class="col-sm-9">
+                <div id="jp-container">
+                    <div id="jplayer"></div>
+                    <div class="jp-content">
+                        <div id="playing"></div>
+                            <ul class="jp-controls">
+                                <li><a href="javascript:;" class="jp-play" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/3.png' %}" alt="Image"></a></li>
+                                <li><a href="javascript:;" class="jp-pause" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/5.png' %}" alt="Image"></a></li>
+                            </ul> 
+                        <div class="jp-interface">
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar">
+                                        <b></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jp-current-time"></div>
+                        </div>
+                    </div>
+                    <div class="jp-playlist">
+                        <ul>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>                
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+
+</div>
+
+
+{% endblock content %}
