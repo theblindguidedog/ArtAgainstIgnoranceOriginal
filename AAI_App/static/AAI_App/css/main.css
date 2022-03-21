@@ -223,7 +223,7 @@ a:focus, button:focus, .btn:focus,
 
 .breadcrumb {
     z-index: 1;
-    background-image: url(../aai_images/bg/twitter_background.png); /* was bg/7.jpg */
+    background-image: url(../aai_images/bg/twitter_background.jpg); /* was bg/7.jpg */
     background-color: transparent;
     position: relative;
     margin-bottom: 0;
