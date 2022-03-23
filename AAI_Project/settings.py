@@ -110,6 +110,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
+
 STATICFILES_DIRS = [
     Path(BASE_DIR, 'AAI_App', 'static'),
     Path(BASE_DIR, 'events', 'static'),
