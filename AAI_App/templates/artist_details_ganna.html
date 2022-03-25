@@ -4,7 +4,14 @@
 
 {% block content %}
 
-<div class="artist-detail before-after section-padding bg-white">
+<div class="showcase-section blog-section blog section-padding before bg-white">
+    <div class="section-title">
+        <i class="fa fa-users"></i>
+        <h2>Artist Details</h2>
+    </div>
+</div>
+
+<div class="gallery-section artist-detail section-padding before">
     <div class="artist-detail-content">
         <div class="container">
             <div class="row">
@@ -23,7 +30,7 @@
                         <h1>Ganna</h1> 
                         <h4>Cartoonist - Arizona</h4>  
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>   
-                        <!-- Address Tag was here -->                     
+                        <!--address.html was here-->                     
                     </div>
                 </div>
             </div><!-- row -->
@@ -46,6 +53,7 @@
                         <li class="active"><a href="{% url 'artist_details_ganna' %}">7</a></li>
                         <li><a href="{% url 'artist_details_nerdyrodent' %}">8</a></li>
                         <li><a href="{% url 'artist_details_blatantblathiest' %}">9</a></li>
+                        <li><a href="{% url 'artist_details_deconvertedman' %}">10</a></li>
                         <li>
                             <a href="{% url 'artist_details_nerdyrodent' %}" aria-label="Next">
                             <span aria-hidden="true">&#8250;</span>

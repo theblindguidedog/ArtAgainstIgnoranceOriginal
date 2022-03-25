@@ -4,9 +4,14 @@
 
 {% block content %}
 
-<div class="extra"></div>>
+<div class="showcase-section blog-section blog section-padding before bg-white">
+    <div class="section-title">
+        <i class="fa fa-users"></i>
+        <h2>Artists</h2>
+    </div>
+</div>
 
-<div class="artists-section ferformers section-padding before-after bg-white">
+<div class="gallery-section artist-section section-padding before">
     <div class="artists-content">
         <div class="container">
             <div class="row">
@@ -25,6 +30,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/deconvertedman-315x475.jpg' %}" alt="deconvertedman-315x475.jpg">
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_deconvertedman' %}">De-Converted Man</a>
+                            <h6>Author</h6>
+                        </div>
+                    </div>
+                </div>
                 <!-- page-parts/other-artists.html was here -->
             </div><!-- row -->
 
@@ -38,6 +58,7 @@
                             </a>
                         </li>
                         <li><a href="{% url 'artists' %}">1</a></li>
+                        <li class="active"><a href="{% url 'artists2' %}">2</a></li>
                         <li>
                             <a href="{% url 'artists' %}" aria-label="Next">
                             <span aria-hidden="true">&#8250;</span>

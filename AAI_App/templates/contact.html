@@ -4,12 +4,18 @@
 
 {% block content %}
 
-<div class="extra"></div>
 
-<div class="feedback section-padding before-after">
+<div class="showcase-section blog-section blog section-padding before-after bg-white">
+    <div class="section-title">
+        <i class="fa fa-envelope-o"></i>
+        <h2>Contact</h2>    
+    </div>
+</div>
+
+<div class="gallery-section feedback section-padding before">
     <div class="container">
         <div class="feedback-content">
-            <h1>Contact Us</h1>
+            <!--<h1>Contact Us</h1>-->
             <form id="contact-form" class="contact-form" name="contact-form" method="post" action="{% url 'contact' %}">
                 {% csrf_token %}
                 <div class="row">

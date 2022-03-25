@@ -4,9 +4,14 @@
 
 {% block content %}
 
-<div class="extra"></div>
+<div class="showcase-section blog-section blog section-padding before-after bg-white">
+    <div class="section-title">
+        <i class="fa fa-home"></i>
+        <h2>Home</h2>    
+    </div>
+</div>
 
-<div class="gallery-section gallery-block section-padding before">
+<div class="gallery-section section-padding before"><!--gallery-block was in this div-->
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -215,15 +220,15 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblathiest-315x475.jpg' %}" alt="blatantblathiest-315x475.jpg">
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/deconvertedman-315x475.jpg' %}" alt="deconvertedman-315x475.jpg">
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
-                            <a href="{% url 'artist_details_blatantblathiest2' %}">Blatant Blathiest</a>
-                            <h6>Rap Artist</h6>
+                            <a href="{% url 'artist_details_deconvertedman2' %}">De-Converted Man</a>
+                            <h6>Author</h6>
                         </div>
                     </div>
                 </div>
@@ -248,7 +253,9 @@
 </div><!-- about section -->
 
 
-<div class="audio-album bg-white section-padding before-after">
+
+
+<div class="audio-album section-padding before-after bg-white">
 
     <div class="section-title" id="index_music">
         <a href="{% url 'music' %}"><h1>Music</h1></a>
@@ -262,8 +269,8 @@
                     <div class="album-image">
                         <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/blatant_blathiest-270x310.jpeg' %}" alt="Image">
                     </div> 
-                    <h1>Dear Mother Nature</h1>
-                    <h2>Blatant Blathiest</h2>
+                    <h1></h1><!--Dear Mother Nature-->
+                    <h2></h2><!--Blatant Blathiest-->
                     <!--form.html was here-->
                 </div>                                               
             </div>

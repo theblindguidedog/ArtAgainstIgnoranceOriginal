@@ -4,15 +4,15 @@
 
 {% block content %}
 
-<div class="showcase-section audio-album blog-section blog section-padding before-after bg-white">
-    <div class="section-title"> <!--did include album-content-->
-        <i class="fa fa-file-audio-o"></i>
-        <h2>Music</h2>
-       <ul class="list-inline">
-           <li><a href="{% url 'artist_details_blatantblathiest' %}"><i class="fa fa-user"></i>By  <span>Blatant Blathiest</span> </a></li>
-           <li><a href="{% url 'artist_details_blatantblathiest' %}"><i class="fa fa-camera"></i>1 song</a></li>
-       </ul>
+<div class="showcase-section blog-section blog section-padding before-after bg-white">
+    <div class="section-title">
+        <i class="fa fa-music"></i>
+        <h2>Music</h2>    
     </div>
+</div>
+
+<div class="gallery-section audio-album gallery-block section-padding before">
+
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -20,8 +20,8 @@
                     <div class="album-image">
                         <a href="{% url 'artist_details_blatantblathiest' %}"><img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/blatant_blathiest-270x310.jpeg' %}" alt="Image"></a>
                     </div> 
-                    <h1>Dear Mother Nature</h1>
-                    <a href="{% url 'artist_details_blatantblathiest' %}"><h2>Blatant Blathiest</h2></a>
+                    <!--<h1>Dear Mother Nature</h1>-->
+                    <!--<h2>Blatant Blathiest</h2>-->
                     <!--form.html was here-->
                 </div>                                               
             </div>

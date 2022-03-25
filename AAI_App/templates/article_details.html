@@ -4,26 +4,25 @@
 
 {% block content %}
 
-<div class="breadcrumb bg-image">
-    <div class="overlay"></div>
-    <div class="page-title">
-        <h1>Follow Our</h1>
-        <h2>Articles & Stuff</h2>
+<div class="showcase-section blog-section blog section-padding before-after bg-white">
+    <div class="section-title">
+        <i class="fa fa-comments-o"></i>
+        <h2>Article Details</h2>    
     </div>
-</div><!-- breadcrumb --> 
+</div>
 
-<div class="blog-details before-after bg-white">
+<div class="gallery-section blog-details before">
     <div class="container">
         <div class="entry-post">
             <div class="entry-thumbnail">
-                <img class="img-responsive" src="{% static 'AAI_App/aai_images/articles/The_Utopians_Abbey_Rd.jpg' %}" alt="Image">
+                <img class="img-responsive" src="{% static 'AAI_App/images/blog/10.jpg' %}" alt="Image">
             </div>
             <div class="post-content">
                 <div class="time">
                     <a href="{% url 'article_details' %}">19 <span>feb</span></a>
                 </div>
                 <div class="entry-title">
-                   <h1>Why The Utopians</h1>
+                   <h1>Article Title</h1>
                </div> 
                <ul class="entry-meta list-inline">
                    <li><a href="{% url 'article_details' %}"><i class="fa fa-user"></i>By  Brian Gervaise </a></li>

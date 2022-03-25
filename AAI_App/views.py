@@ -85,6 +85,11 @@ def artist_details_blatantblathiest2(request):
 def artist_details_deconvertedman(request):
     return render(request, 'artist_details_deconvertedman.html', {})
 
+def artist_details_deconvertedman2(request):
+    return render(request, 'artist_details_deconvertedman2.html', {})
+
+
+
 
 
 
