@@ -23,14 +23,14 @@ ALLOWED_HOSTS = ['localhost', 'https://artagainstignorance.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'events.apps.EventsConfig',
-    'AAI_App.apps.AaiAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'AAI_App.apps.AaiAppConfig',
+    'events.apps.EventsConfig',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,10 @@ ROOT_URLCONF = 'AAI_Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            Path(BASE_DIR, 'AAI_App', 'templates'),
+            Path(BASE_DIR, 'events', 'templates'),    
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,6 +119,14 @@ STATICFILES_DIRS = [
     Path(BASE_DIR, 'AAI_App', 'static'),
     Path(BASE_DIR, 'events', 'static'),
 ]
+
+# Another possible way of doing it (maybe)
+
+#STATIC_URL = 'static/'
+
+#STATICFILES_DIRS = [
+#    Path(BASE_DIR, 'staticfiles'),
+#]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
