@@ -1,0 +1,148 @@
+/* ==========================================================================
+ 	MyCSS
+ ========================================================================== */
+
+ .extra {
+ padding-top: 30px;
+}
+
+/* Blog Details */
+
+.blog-details .entry-post {
+    max-width: inherit;
+    max-height: 600px;
+}
+
+.blog-section.blog {
+    padding-top: 80px;
+}
+
+.blog-section.blog .entry-post {
+    margin-bottom: 30px;
+}
+
+.blog-section.blog .pagination {
+    margin-top: 50px;
+}
+
+.entry-post .entry-meta a {
+    font-size: 16px;
+    color: #fff;
+}
+
+.entry-post .entry-meta i {
+    margin-right: 10px;
+}
+
+.entry-post .entry-meta  li+li {
+    margin-left: 15px;
+}
+
+.entry-post .entry-meta  li:first-child {
+    text-transform: uppercase;
+}
+
+.entry-post .entry-meta a:hover {
+    color: #ed145b;
+}
+
+.blog-details .entry-post {
+    margin-top: 80px;
+}
+
+.blog-details .entry-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.blog-details .post-content {
+    padding-bottom: 50px;
+}
+
+.entry-summary {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 55px;
+    font-family: 'aller_lightregular';
+    max-width: 1085px;
+}
+
+.entry-summary::first-letter {
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+.entry-summary p { 
+    margin-bottom: 25px;
+}
+
+.commenter-info {
+    float:left;
+    margin-right: 15px;
+}
+
+.commenter-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.blog-social {
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.media-inner,
+.media-inner h4 span {
+    font-size: 14px;
+    line-height: 22px;
+    color: #888;
+}
+
+.media-inner h4 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.media-inner .reply {
+    font-size: 14px;
+    color: #ed145b;
+}
+
+.post-comment {
+    max-width: 1075px;
+}
+
+.replay-box h1, 
+.feedback h1 {
+    border-bottom: 2px solid #e6e7e8;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'aller_displayregular';
+}
+
+.comments-area h1 {
+    margin-bottom: 40px;
+}
+
+.comments-area h1 {
+    color: #000;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'aller_displayregular';    
+}
+
+.comments-area li {
+    padding-bottom: 90px;
+}
+
+.comments-area li:last-child {
+    padding-left: 180px;
+} 
+
+.replay-box {
+    padding-bottom: 60px;
+}

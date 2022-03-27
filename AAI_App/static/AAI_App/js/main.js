@@ -9,7 +9,7 @@ jQuery(function ($) {
     // js_parts/backstretch.js was here instead of the function below
     (function () {  
 
-        $(".body-base").backstretch([ "static/AAI_App/images/slider/slider4.jpg","static/AAI_App/images/slider/slider5.jpg"], {fade: 750,duration: 5000,});  
+        $(".body-base").backstretch([ "static/AAI_App/aai_images/slider/slider2.jpg","static/AAI_App/aai_images/slider/slider2.jpg"], {fade: 750,duration: 5000,});  
 
     }());
 
