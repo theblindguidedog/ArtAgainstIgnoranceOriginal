@@ -113,7 +113,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
+STATIC_ROOT = Path(BASE_DIR, 'staticfiles') # Works with or without this as far as I can tell
 
 STATICFILES_DIRS = [
     Path(BASE_DIR, 'AAI_App', 'static'),
