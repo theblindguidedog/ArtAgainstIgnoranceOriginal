@@ -88,6 +88,9 @@ def artist_details_deconvertedman(request):
 def artist_details_deconvertedman2(request):
     return render(request, 'artist_details_deconvertedman2.html', {})
 
+def artist_details_deconvertedman3(request):
+    return render(request, 'artist_details_deconvertedman3.html', {})
+
 
 
 

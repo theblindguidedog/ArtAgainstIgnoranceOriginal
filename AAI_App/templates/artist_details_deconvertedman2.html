@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="gallery-section artist-detail section-padding before">
-    <div class="extra"></div><!-- extra padding between top menu and page content mystyle.css -->
+    <br/><br/>
     <div class="artist-detail-content">
         <div class="container">
             <div class="row">
@@ -28,6 +28,8 @@
                     </div>
                 </div>
             </div><!-- row -->
+
+            <br/><br/>
 
             <div class="row text-center">
                 <nav>
@@ -55,9 +57,9 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="extra"></div><!-- extra padding between content mystyle.css -->
+                    <br/><br/><br/>
                     <ul>
-                        <li><a href="{% url 'artists2' %}"  class="btn btn-info">Back</a></li>
+                        <li><a href="{% url 'index' %}#index_artists"  class="btn btn-info">Back</a></li>
                     </ul>
                 </nav>                     
             </div>

@@ -2712,7 +2712,7 @@ textarea.form-control {
 
 .pagination li a {
     border: 0;
-    font-size: 18px;
+    font-size: 12px;/*was 18px*/
     color: #ed145b;
     background-color: #fff;
     padding:10px 15px;

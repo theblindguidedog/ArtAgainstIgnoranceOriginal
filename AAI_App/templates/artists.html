@@ -5,14 +5,12 @@
 {% block content %}
 
 <div class="gallery-section artist-section section-padding before">
-    <div class="extra"></div><!-- extra padding between top menu and page content mystyle.css -->
-    <div class="extra"></div><!-- extra padding between top menu and page content mystyle.css -->
-    <div class="extra"></div><!-- extra padding between top menu and page content mystyle.css -->
+    <br/><br/>
     <div class="artists-content">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3">
-                    <div class="artists" id="artists">
+                    <div class="artists">
                         <div class="artists-overlay"></div>
                         <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" alt="briangervaise-315x475.jpg">
                         <div class="artists-info">
@@ -56,6 +54,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="artists_bottom"></div>
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
@@ -133,6 +132,8 @@
                 </div>
             </div><!-- row -->
 
+            <br/><br/>
+
             <div class="row text-center">
                 <nav>
                     <ul class="pagination">
@@ -155,7 +156,6 @@
             </div>                
         </div><!-- container -->           
     </div><!-- artists content -->           
-</div><!-- artists section -->
-<div class="before"></div>   
+</div><!-- artists section -->   
 
 {% endblock %}

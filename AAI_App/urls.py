@@ -30,5 +30,6 @@ urlpatterns = [
     path('artist_details_blatantblathiest2', views.artist_details_blatantblathiest2, name="artist_details_blatantblathiest2"),
     path('artist_details_deconvertedman', views.artist_details_deconvertedman, name="artist_details_deconvertedman"),
     path('artist_details_deconvertedman2', views.artist_details_deconvertedman2, name="artist_details_deconvertedman2"),
+    path('artist_details_deconvertedman3', views.artist_details_deconvertedman3, name="artist_details_deconvertedman3"),
     
 ]
