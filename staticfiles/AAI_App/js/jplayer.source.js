@@ -97,11 +97,25 @@ $(document).ready(function() {
             cssSelectorAncestor: "#jp-container"
         }, [
             {
-                artist: "Blatant Blathiest", // the artist name
+                artist: "CLIMATE CHAOS", // the artist name
                 title:"<span>01.</span> Dear Mother Nature", // track title
                 mp3:"static/AAI_App/audio/m4a/DearMotherNature.m4a",// m4a path
                 oga:"",// oga path
                 duration: '2:22'// duration time in playlist
+            },
+            {
+                artist: "RELIGION", // the artist name
+                title:"<span>02.</span> I Can't Lie", // track title
+                mp3:"static/AAI_App/audio/mp3/I_can-t_lie.mp3",// m4a path
+                oga:"",// oga path
+                duration: '2:53'// duration time in playlist
+            },
+            {
+                artist: "RELIGION", // the artist name
+                title:"<span>03.</span> What if You're Wrong", // track title
+                mp3:"static/AAI_App/audio/mp3/what_if_you-re_wrong.mp3",// m4a path
+                oga:"",// oga path
+                duration: '4:02'// duration time in playlist
             },
             // extra_songs.js was here
             

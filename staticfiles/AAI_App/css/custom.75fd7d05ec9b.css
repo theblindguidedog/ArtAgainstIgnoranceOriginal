@@ -1,0 +1,19 @@
+/* MY CSS */
+
+.mystyle {
+    font-family: 'allerregular', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    opacity:0.5;
+	font-weight:400;
+    font-size:2.8vw;
+    line-height:auto;
+    letter-spacing:auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+

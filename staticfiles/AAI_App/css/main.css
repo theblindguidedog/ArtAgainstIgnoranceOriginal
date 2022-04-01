@@ -28,7 +28,6 @@
 */
 
 
-
 /* ==========================================================================
  	Global
  ========================================================================== */
@@ -178,7 +177,7 @@ a:focus, button:focus, .btn:focus,
     content: "";
     top: -30px; 
     width: 6%; 
-    border-bottom: 30px solid #fff;   
+    border-bottom: 30px solid #fff;  
 	z-index:10;
 }
 
@@ -189,7 +188,7 @@ a:focus, button:focus, .btn:focus,
 
 .before-after:after {
     right: 0;
-    border-left: 25px solid transparent;    
+    border-left: 25px solid transparent;   
 }
 
 .before:before {
@@ -465,6 +464,7 @@ ul.sub-menu {
 
 /* HOME BANNER WAS HERE */
 
+
 /* About Section */
 
 .about-section.about {
@@ -527,6 +527,7 @@ ul.sub-menu {
     font-family: 'aller_lightregular';
     overflow: hidden;
 }
+
 
 .about-section.about .about-info {
     background-color: #fff;
@@ -710,9 +711,9 @@ ul.sub-menu {
 /* Gallery Section */
 
 .gallery-section {
-    background-image: url(../images/bg/3.jpg);
-    background-color: #e7eced;
-    padding-bottom: 100px;
+    /*background-image: url(../images/bg/3.jpg);*/
+    background-color: transparent;/*#e7eced*/
+    padding-bottom: 10px;/*100px*/
 }
 
 .video-content {
@@ -2069,7 +2070,7 @@ textarea.form-control {
 
 .contact-section.contact.before-after:before, 
 .contact-section.contact.before-after:after {
-    background-image: url(../images/bg/map-bg.jpg);  
+    background-image: url(../images/bg/map-bg.jpg); 
     height: 30px;
     border: 0;
     top: -29px;

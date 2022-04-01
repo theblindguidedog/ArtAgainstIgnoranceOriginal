@@ -64,6 +64,9 @@ def artist_details_wally(request):
 def artist_details_johnno(request):
     return render(request, 'artist_details_johnno.html', {})
 
+def artist_details_johnno2(request):
+    return render(request, 'artist_details_johnno2.html', {})
+
 def artist_details_ganna(request):
     return render(request, 'artist_details_ganna.html', {})
 
@@ -84,12 +87,6 @@ def artist_details_blatantblathiest2(request):
 
 def artist_details_deconvertedman(request):
     return render(request, 'artist_details_deconvertedman.html', {})
-
-def artist_details_deconvertedman2(request):
-    return render(request, 'artist_details_deconvertedman2.html', {})
-
-def artist_details_deconvertedman3(request):
-    return render(request, 'artist_details_deconvertedman3.html', {})
 
 
 

@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="{% static 'AAI_App/css/cubeportfolio.min.css' %}">      
         <link rel="stylesheet" href="{% static 'AAI_App/css/main.css' %}"> 
         <link rel="stylesheet" href="{% static 'AAI_App/css/responsive.css' %}">
-        <link rel="stylesheet" href="{% static 'AAI_App/css/mystyle.css' %}">           
+        <link rel="stylesheet" href="{% static 'AAI_App/css/custom.css' %}">          
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,6 +41,7 @@
         <![endif]-->
     
     </head>
+
     <body class="body-base">
         <header id="navigation">  
             <div class="navbar navbar-fixed-top">
@@ -91,7 +92,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{% url 'music' %}">
+                                <a href="https://artagainstignorance.bandcamp.com/music">
                                     MUSIC
                                     <div class="equalizer">
                                         <span class="bar bar-1"></span>
@@ -108,59 +109,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{% url 'video' %}">
-                                    VIDEOS
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% url 'articles' %}">
-                                    ARTICLES
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% url 'shop' %}">
-                                    SHOP
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% url 'about' %}">
-                                    ABOUT
+                                <a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">
+                                    T-Shirts
                                     <div class="equalizer">
                                         <span class="bar bar-1"></span>
                                         <span class="bar bar-2"></span>
@@ -194,7 +144,7 @@
                 <a href="mailto:artagainstignorance7@gmail.com">info@artagainstignorance.com</a>
                 <ul class="social list-inline">
                     <li><a href="http://www.facebook.com/artagainstignorance" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://www.soundcloud.com/user-835755130" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4" target="_blank"><i class="fa fa-spotify"></i></a></li>
                     <li><a href="http://www.instagram.com/artagainstignorance" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCaZk8_S2Z1FxxPcIPnvfwbg" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
@@ -210,11 +160,8 @@
                     <ul>
                         <li><a href="{% url 'index' %}">Home</a></li>
                         <li><a href="{% url 'artists' %}">Artists</a></li>
-                        <li><a href="{% url 'music' %}">Music</a></li>
-                        <li><a href="{% url 'video' %}">Videos</a></li>                      
-                        <li><a href="{% url 'articles' %}">Articles</a></li>
-                        <li><a href="{% url 'shop' %}">Shop</a></li>
-                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'music' %}">Music</a></li>                      
+                        <li><a href="{% url 'shop' %}">T-Shirts</a></li>
                     </ul>
                 </div>                      
             </div><!-- container -->

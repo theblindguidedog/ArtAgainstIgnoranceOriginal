@@ -22,6 +22,7 @@ urlpatterns = [
     path('artist_details_scottgervaise', views.artist_details_scottgervaise, name="artist_details_scottgervaise"),
     path('artist_details_wally', views.artist_details_wally, name="artist_details_wally"),
     path('artist_details_johnno', views.artist_details_johnno, name="artist_details_johnno"),
+    path('artist_details_johnno2', views.artist_details_johnno2, name="artist_details_johnno2"),
     path('artist_details_ganna', views.artist_details_ganna, name="artist_details_ganna"),
     path('artist_details_ganna2', views.artist_details_ganna2, name="artist_details_ganna2"),
     path('artist_details_nerdyrodent', views.artist_details_nerdyrodent, name="artist_details_nerdyrodent"),
@@ -29,7 +30,5 @@ urlpatterns = [
     path('artist_details_blatantblathiest', views.artist_details_blatantblathiest, name="artist_details_blatantblathiest"),
     path('artist_details_blatantblathiest2', views.artist_details_blatantblathiest2, name="artist_details_blatantblathiest2"),
     path('artist_details_deconvertedman', views.artist_details_deconvertedman, name="artist_details_deconvertedman"),
-    path('artist_details_deconvertedman2', views.artist_details_deconvertedman2, name="artist_details_deconvertedman2"),
-    path('artist_details_deconvertedman3', views.artist_details_deconvertedman3, name="artist_details_deconvertedman3"),
     
 ]

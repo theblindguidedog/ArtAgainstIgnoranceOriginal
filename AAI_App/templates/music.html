@@ -4,14 +4,14 @@
 
 {% block content %}
 
-<div class="audio-album gallery-section section-padding before"><!--included: gallery-block-->
+<div class="audio-album section-padding before-after"><!--included: gallery-block-->
     <br/><br/>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <div class="left-content">
                     <div class="album-image">
-                        <a href="{% url 'artist_details_blatantblathiest' %}"><img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/blatant_blathiest-270x310.jpeg' %}" alt="Image"></a>
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/aai_instagram_post-270x310.png' %}" alt="aai_instagram_post-270x310.png">
                     </div> 
                     <!--<h1>Dear Mother Nature</h1>-->
                     <!--<h2>Blatant Blathiest</h2>-->
@@ -51,7 +51,8 @@
             </div>
         </div><!-- row -->
     </div><!-- container -->
- </div><!-- album content -->   
+ </div><!-- album content -->
+ <div class="container"><p>Support us on Bandcamp by downloading or Stream us on Spotify. (Add Links)</p></div>   
 </div><!-- audio album -->
 
 {% endblock %}

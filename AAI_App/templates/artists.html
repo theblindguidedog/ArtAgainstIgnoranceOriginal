@@ -4,23 +4,30 @@
 
 {% block content %}
 
-<div class="gallery-section artist-section section-padding before">
+<div class="artist-section section-padding before" style="background-color:transparent;"><!--gallery-section-->
+    
     <br/><br/>
+
+    <div class="section-title">
+        <a href="{% url 'artists' %}"><h1>ARTISTS</h1></a>
+        <a href="{% url 'artists' %}"><h2>Art Against Ignorance</h2></a>
+    </div>
+
     <div class="artists-content">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" alt="briangervaise-315x475.jpg">
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
-                            <a href="{% url 'artist_details_briangervaise' %}">Brian Gervaise</a>
-                            <h6>Writer/Musician - Producer</h6>
+                            <a href="{% url 'artist_details_darceygervaise' %}">Darcey Gervaise</a>
+                            <h6>Music Producer</h6>
                         </div>
                     </div>
                 </div>
@@ -35,26 +42,25 @@
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                             <a href="{% url 'artist_details_zacharygervaise' %}">Zach Gervaise</a>
-                            <h6>Writer/Musician - Performer</h6>
+                            <h6>Writer</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
-                            <a href="{% url 'artist_details_darceygervaise' %}">Darcey Gervaise</a>
-                            <h6>Writer/Musician - Producer</h6>
+                            <a href="{% url 'artist_details_briangervaise' %}">Brian Gervaise</a>
+                            <h6>Concept Development</h6>
                         </div>
                     </div>
                 </div>
-                <div id="artists_bottom"></div>
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
@@ -66,7 +72,7 @@
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                             <a href="{% url 'artist_details_scottgervaise' %}">Scott Gervaise</a>
-                            <h6>Writer/Musician - Web Designer</h6>
+                            <h6>Web Design</h6>
                         </div>
                     </div>
                 </div>
@@ -80,23 +86,23 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
-                            <a href="{% url 'artist_details_wally' %}">Wally</a>
-                            <h6>Writer/Musician - Performer</h6>
+                            <a href="{% url 'artist_details_wally' %}">Zoltan John</a>
+                            <h6>Musician</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" alt="johnno-315x475.jpg">
+                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblathiest-315x475.jpg' %}" alt="johnno-315x475.jpg">
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
-                            <a href="{% url 'artist_details_johnno' %}">Johnno</a>
-                            <h6>Musician/Vocalist - Performer</h6>
+                            <a href="{% url 'artist_details_blatantblathiest' %}">Blatant Blatheist</a>
+                            <h6>Rap Artist</h6>
                         </div>
                     </div>
                 </div>
