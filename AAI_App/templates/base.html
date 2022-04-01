@@ -57,7 +57,8 @@
                     </div>
                     <nav class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li>
+                            {% url 'index' as url %}
+                            <li class="nav-item {% if request.path == url %}active{% endif %}">
                                 <a href="{% url 'index' %}">
                                     HOME
                                     <div class="equalizer">
@@ -74,7 +75,8 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            {% url 'artists' as url %}
+                            <li class="nav-item {% if request.path == url %}active{% endif %}">
                                 <a href="{% url 'artists' %}">
                                     ARTISTS
                                     <div class="equalizer">
@@ -91,8 +93,9 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://artagainstignorance.bandcamp.com/music">
+                            {% url 'music' as url %}
+                            <li class="nav-item {% if request.path == url %}active{% endif %}">
+                                <a href="{% url 'music' %}"><!--https://artagainstignorance.bandcamp.com/music-->
                                     MUSIC
                                     <div class="equalizer">
                                         <span class="bar bar-1"></span>
@@ -108,8 +111,9 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">
+                            {% url 'shop' as url %}
+                            <li class="nav-item {% if request.path == url %}active{% endif %}">
+                                <a href="{% url 'shop' %}">
                                     T-Shirts
                                     <div class="equalizer">
                                         <span class="bar bar-1"></span>

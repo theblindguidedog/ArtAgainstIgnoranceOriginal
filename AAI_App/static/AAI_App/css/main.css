@@ -3793,7 +3793,7 @@ textarea.form-control {
 }
 
 .audio-album .jp-controls {
-    background-image: url(../images/album/1.jpg);
+    background-image: url(../aai_images/thumbnail/music/aai_instagram_post-270x310.png);/*../images/album/1.jpg*/
     background-size: contain;
     width: 110px;
     height: 110px;
