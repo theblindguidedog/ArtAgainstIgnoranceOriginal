@@ -4,8 +4,13 @@
 
 {% block content %}
 
-<div class="gallery-section artist-section section-padding before">
-    <br/><br/>
+<div class="artist-section section-padding before" style="background-color:transparent;"><!--gallery-section-->
+
+    <div class="section-title">
+        <a href="{% url 'artists2' %}"><h1>ARTISTS</h1></a>
+        <a href="{% url 'artists2' %}"><h2>Art Against Ignorance</h2></a>
+    </div>
+
     <div class="artists-content">
         <div class="container">
             <div class="row">

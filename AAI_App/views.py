@@ -79,11 +79,11 @@ def artist_details_nerdyrodent(request):
 def artist_details_nerdyrodent2(request):
     return render(request, 'artist_details_nerdyrodent2.html', {})
 
-def artist_details_blatantblathiest(request):
-    return render(request, 'artist_details_blatantblathiest.html', {})
+def artist_details_blatantblatheist(request):
+    return render(request, 'artist_details_blatantblatheist.html', {})
 
-def artist_details_blatantblathiest2(request):
-    return render(request, 'artist_details_blatantblathiest2.html', {})
+def artist_details_blatantblatheist2(request):
+    return render(request, 'artist_details_blatantblatheist2.html', {})
 
 def artist_details_deconvertedman(request):
     return render(request, 'artist_details_deconvertedman.html', {})

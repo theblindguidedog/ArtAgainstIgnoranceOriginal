@@ -1,5 +1,17 @@
 /* MY CSS */
 
+/*  interesting css property style="transform:rotate(45deg);"  */
+
+.no-web .body-base {
+    background-image: url(../aai_images/bg/2.jpg);
+    z-index: 1;    
+}
+
+.webp .body-base {
+    background-image: url(../aai_images/bg/webp/2.webp);
+    z-index:1;    
+}
+
 .mystyle {
     font-family: 'allerregular', sans-serif;
     color: rgba(0, 0, 0, 1);
@@ -12,6 +24,17 @@
 
 .noHover{
     pointer-events: none;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+}
+
+.logos {
+    max-height: 100%;
+    max-width:100%;
+    align-content: center;
 }
 
 

@@ -17,7 +17,14 @@ SECRET_KEY = 'django-insecure-_^j$$m%bi-!-b%g9$yq8ygb6+do%cn=uu*_+ucogex^oo0hkba
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://artagainstignorance.herokuapp.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'https://artagainstignorance.herokuapp.com',
+    'https://artagainstignorance.com',
+    'https://artagainstignorance.art',
+    ],
+
 
 
 # Application definition

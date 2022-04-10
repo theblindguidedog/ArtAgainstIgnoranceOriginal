@@ -27,8 +27,8 @@ urlpatterns = [
     path('artist_details_ganna2', views.artist_details_ganna2, name="artist_details_ganna2"),
     path('artist_details_nerdyrodent', views.artist_details_nerdyrodent, name="artist_details_nerdyrodent"),
     path('artist_details_nerdyrodent2', views.artist_details_nerdyrodent2, name="artist_details_nerdyrodent2"),
-    path('artist_details_blatantblathiest', views.artist_details_blatantblathiest, name="artist_details_blatantblathiest"),
-    path('artist_details_blatantblathiest2', views.artist_details_blatantblathiest2, name="artist_details_blatantblathiest2"),
+    path('artist_details_blatantblatheist', views.artist_details_blatantblatheist, name="artist_details_blatantblatheist"),
+    path('artist_details_blatantblatheist2', views.artist_details_blatantblatheist2, name="artist_details_blatantblatheist2"),
     path('artist_details_deconvertedman', views.artist_details_deconvertedman, name="artist_details_deconvertedman"),
     
 ]

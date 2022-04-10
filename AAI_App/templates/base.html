@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +42,7 @@
     
     </head>
 
-    <body class="body-base">
+    <body class="body-base-background">
         <header id="navigation">  
             <div class="navbar navbar-fixed-top">
                 <div class="container">
@@ -93,57 +93,25 @@
                                     </div>
                                 </a>
                             </li>
-                            {% url 'music' as url %}
-                            <li class="nav-item {% if request.path == url %}active{% endif %}">
-                                <a href="{% url 'music' %}"><!--https://artagainstignorance.bandcamp.com/music-->
-                                    MUSIC
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
-                            {% url 'shop' as url %}
-                            <li class="nav-item {% if request.path == url %}active{% endif %}">
-                                <a href="{% url 'shop' %}">
-                                    T-Shirts
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
+                            <!-- menu_music.html was here -->
+                            <!-- menu_t-shirts.html -->
                             <!-- Dropdown Pages Menu was here -->
                         </ul>
                     </nav>
 
-                    <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+                    <a href="mailto:artagainstignorance7@gmail.com" class="btn btn-primary">Contact Us</a>
 
                 </div><!-- container -->
             </div><!-- navbar -->                                
-        </header><!-- Header -->
+        </header><!-- header -->
+        
+        <br/><br/>
 
-        {% block content %}{% endblock content %}
+                {% block content %}{% endblock content %}
 
         <div class="promotion contact section-padding bg-image after">
             <div class="promotion-overlay"></div>
-            <div class="promotion-content">
+                <div class="promotion-content">
                 <h1><a href="{% url 'contact' %}">Contact Us</a></h1>
                 <a href="mailto:artagainstignorance7@gmail.com">info@artagainstignorance.com</a>
                 <ul class="social list-inline">
@@ -152,8 +120,10 @@
                     <li><a href="http://www.instagram.com/artagainstignorance" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCaZk8_S2Z1FxxPcIPnvfwbg" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
-            </div>              
-        </div><!-- promotion -->
+            </div><!-- promotion-content -->             
+        </div><!-- promotion contact section-padding bg-image after -->
+
+
 
         <div class="footer before-after bg-white">
             <div class="container">
@@ -167,15 +137,25 @@
                         <li><a href="{% url 'music' %}">Music</a></li>                      
                         <li><a href="{% url 'shop' %}">T-Shirts</a></li>
                     </ul>
-                </div>                      
+                </div><!-- footer-memu -->                      
             </div><!-- container -->
-        </div><!-- footer -->
+        </div><!-- footer before-after bg-white-->
+
+        <!-- NO JS -->
+        <script>
+            document.documentElement.classList.remove("no-js");
+        </script>
 
         <!-- JS -->
         <script src="{% static 'AAI_App/js/jquery.min.js' %}"></script>
         <script src="{% static 'AAI_App/js/bootstrap.min.js' %}"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>      
-        <script src="{% static 'AAI_App/js/gmaps.min.js' %}"></script>          
+
+        <!-- GOOGLE MAPS -->
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF8h3Hf8yaE3HnE8ndGs2nqq17QQ_huog&callback=initMap"></script>
+
+        <!-- END GOOGLE MAPS -->
+
         <script src="{% static 'AAI_App/js/jquery.jplayer.min.js' %}"></script> 
         <script src="{% static 'AAI_App/js/jplayer.playlist.min.js' %}"></script> 
         <script src="{% static 'AAI_App/js/jquery.plugin.js' %}"></script> 

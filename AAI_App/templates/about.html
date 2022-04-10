@@ -9,22 +9,21 @@
 <!-- ADD GREEN AND PURPLE LOGO INSTEAD OF DARCEY PHOTO -->
 
 <div class="gallery-section section-padding before"><!--about-section about-festival was in this div-->
-    <br/><br/>
     <div class="about-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 no-padding">
-                    <div class=""><!--was class="about-image"-->
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/logos/png/vertical_icon.png' %}" style="max-height: 600px; max-width:220px; align-content: center;" alt="vertical_icon.png"> <!--was about/1.jpg-->
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/about/darceygervaise-500x500.jpg' %}" alt="Darcey"> <!--was about/1.jpg-->
                     </div>
                 </div>
-                <div class="col-md-6 no-padding">
-                    <div class="about-info">
-                        <h3>Art Against Ignorance</h3>
+                <div class="col-md-6">
+                    <div style="font-size:15px;"><!-- class=="about-info"-->
+                        <h3><u style="color:red;">Art Against Ignorance</u></h3>
 
                         <!--date_time.html was here-->
 
-                            <p> Is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience.
+                                Is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience.
                                 <br/><br/>
                                 We are a growing community of creative people collaborating to try and raise awareness, inspire unity and encourage change by harnessing the power of music for the greater good.
                                 <br/><br/>
@@ -33,13 +32,14 @@
                                 Our goal is to connect with people on an intellectual level via the emotions.
                                 <br/><br/>
                                 We hope to arouse wonder with thought provoking concepts brought to life by talented humans from all walks of life all around the world.
-                                
-                            </p>
+                                <br/><br/><br/>                           
                     </div>
                 </div>
             </div><!-- row -->
         </div><!-- container -->
     </div><!-- about content -->
-</div><!-- about section -->  
+</div><!-- about section --> 
+
+<br/><br/><br/>
 
 {% endblock %}

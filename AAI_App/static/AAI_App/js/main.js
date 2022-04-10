@@ -7,9 +7,11 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     // js_parts/backstretch.js was here instead of the function below
-    (function () {  
+    (function () { 
+        
+        $(".body-base-background").backstretch([ "static/AAI_App/aai_images/slider/slider2.jpg"]);
 
-        $(".body-base").backstretch([ "static/AAI_App/aai_images/slider/slider2.jpg","static/AAI_App/aai_images/slider/slider2.jpg"], {fade: 750,duration: 5000,});  
+        //$(".body-base-slider").backstretch([ "static/AAI_App/aai_images/slider/slider2.jpg","static/AAI_App/aai_images/slider/slider2.jpg"], {fade: 750,duration: 5000,});  
 
     }());
 
@@ -240,8 +242,8 @@ jQuery(function ($) {
 
         map = new GMaps({
             el: '#gmap',
-            lat: 47.0712247,
-            lng: 2.3989918,
+            lat: -34.425072,
+            lng: 150.893143,
             scrollwheel:false,
             zoom: 8,
             zoomControl : true,
@@ -255,8 +257,8 @@ jQuery(function ($) {
 
         var image = 'static/AAI_App/images/map-icon.png';
         map.addMarker({
-            lat: 47.0712247,
-            lng: 2.3989918,
+            lat: -34.425072,
+            lng: 150.893143,
             icon: image,
             animation: google.maps.Animation.DROP,
             verticalAlign: 'bottom',

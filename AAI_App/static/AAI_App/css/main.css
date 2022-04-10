@@ -181,17 +181,19 @@ a:focus, button:focus, .btn:focus,
 	z-index:10;
 }
 
-.before-after:before {
+/*the next 3 blocks were : I changed them to ::*/
+
+.before-after::before {
     left: 0;
     border-right: 25px solid transparent;
 }
 
-.before-after:after {
+.before-after::after {
     right: 0;
     border-left: 25px solid transparent;   
 }
 
-.before:before {
+.before::before {
     position: absolute;
     content: "";
     top: 0;
@@ -467,17 +469,26 @@ ul.sub-menu {
 
 /* About Section */
 
-.about-section.about {
-    background-image: url(../images/bg/2.jpg);
+.no-webp .about-section.about {
+    background-image: url(../aai_images/bg/2.jpg);
     background-color: #e7eced;
 }
 
-.about-section.about.before-after:before, 
-.about-section.about.before-after:after {
-	background-image: url(../images/bg/2.jpg);	
+.webp .about-section.about {
+    background-image: url(../aai_images/bg/webp/2.webp);
+}
+
+.no-webp .about-section.about.before-after:before, 
+.no-webp .about-section.about.before-after:after {
+	background-image: url(../aai_images/bg/2.jpg);	
 	height: 30px;
 	border: 0;
 	top: -29px;
+}
+
+.webp .about-section.about.before-after:before, 
+.webp .about-section.about.before-after:after {
+    background-image: url(../aai_images/bg/webp/2.webp)
 }
 
 .about-section.about.before-after:before {	
@@ -4264,7 +4275,7 @@ textarea.form-control {
 }
 
 .footer-widget a:hover {
-    color: #000;
+    color: rgb(183, 4, 238);/*was #000*/
 }
 
 /* ==========================================================================
