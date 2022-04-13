@@ -31,7 +31,8 @@
         <link rel="stylesheet" href="{% static 'AAI_App/css/cubeportfolio.min.css' %}">      
         <link rel="stylesheet" href="{% static 'AAI_App/css/main.css' %}"> 
         <link rel="stylesheet" href="{% static 'AAI_App/css/responsive.css' %}">
-        <link rel="stylesheet" href="{% static 'AAI_App/css/custom.css' %}">          
+        <link rel="stylesheet" href="{% static 'AAI_App/css/custom.css' %}">
+
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +43,7 @@
     
     </head>
 
-    <body class="body-base-background">
+    <body class="body-base-slider">
         <header id="navigation">  
             <div class="navbar navbar-fixed-top">
                 <div class="container">
@@ -109,21 +110,20 @@
 
                 {% block content %}{% endblock content %}
 
+        <br/><br/>
+
         <div class="promotion contact section-padding bg-image after">
             <div class="promotion-overlay"></div>
-                <div class="promotion-content">
-                <h1><a href="{% url 'contact' %}">Contact Us</a></h1>
-                <a href="mailto:artagainstignorance7@gmail.com">info@artagainstignorance.com</a>
+            <div class="promotion-content">
+                <h1><a href="mailto:artagainstignorance7@gmail.com">Contact Us</a></h1>
                 <ul class="social list-inline">
-                    <li><a href="http://www.facebook.com/artagainstignorance" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4" target="_blank"><i class="fa fa-spotify"></i></a></li>
-                    <li><a href="http://www.instagram.com/artagainstignorance" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCaZk8_S2Z1FxxPcIPnvfwbg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="http://www.facebook.com/artagainstignorance"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4"><i class="fa fa-spotify"></i></a></li>
+                    <li><a href="http://www.instagram.com/artagainstignorance"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCaZk8_S2Z1FxxPcIPnvfwbg"><i class="fa fa-youtube"></i></a></li>
                 </ul>
-            </div><!-- promotion-content -->             
+            </div><!-- promotion-content -->
         </div><!-- promotion contact section-padding bg-image after -->
-
-
 
         <div class="footer before-after bg-white">
             <div class="container">
@@ -134,8 +134,6 @@
                     <ul>
                         <li><a href="{% url 'index' %}">Home</a></li>
                         <li><a href="{% url 'artists' %}">Artists</a></li>
-                        <li><a href="{% url 'music' %}">Music</a></li>                      
-                        <li><a href="{% url 'shop' %}">T-Shirts</a></li>
                     </ul>
                 </div><!-- footer-memu -->                      
             </div><!-- container -->
@@ -154,8 +152,9 @@
 
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF8h3Hf8yaE3HnE8ndGs2nqq17QQ_huog&callback=initMap"></script>
 
-        <!-- END GOOGLE MAPS -->
 
+        <!-- ORIGINAL JS -->
+        
         <script src="{% static 'AAI_App/js/jquery.jplayer.min.js' %}"></script> 
         <script src="{% static 'AAI_App/js/jplayer.playlist.min.js' %}"></script> 
         <script src="{% static 'AAI_App/js/jquery.plugin.js' %}"></script> 
@@ -167,6 +166,7 @@
         <script src="{% static 'AAI_App/js/jquery.spinner.min.js' %}"></script> 
         <script src="{% static 'AAI_App/js/cubeportfolio.min.js' %}"></script>    
         <script src="{% static 'AAI_App/js/jplayer.source.js' %}"></script>
-        <script src="{% static 'AAI_App/js/main.js' %}"></script>         
+        <script src="{% static 'AAI_App/js/main.js' %}"></script>
+  
     </body>
 </html>

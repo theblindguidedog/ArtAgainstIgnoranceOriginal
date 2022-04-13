@@ -13,6 +13,9 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html', {})
 
+def test(request):
+    return render(request, 'test.html', {})
+
 def music(request):
     return render(request, 'music.html', {})
 
@@ -28,13 +31,13 @@ def shop_details(request):
 def shop_details_liamgervaise(request):
     return render(request, 'shop_details_liamgervaise.html', {})
 
-def articles(request):
+def news(request):
     return render(request, 'articles.html', {})
 
-def article_details(request):
+def news_details(request):
     return render(request, 'article_details.html', {})
 
-def article_details_utopians(request):
+def news_details_utopians(request):
     return render(request, 'article_details_utopians.html', {})
 
 def artists(request):

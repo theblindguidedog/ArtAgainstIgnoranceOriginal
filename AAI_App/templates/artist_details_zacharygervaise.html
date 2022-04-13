@@ -10,19 +10,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="artist-image">
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/zacharygervaise-379x558.jpg' %}" alt="zacharygervaise-379x558.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/zacharygervaise-379x558.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/zacharygervaise-379x558.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/zacharygervaise-379x558.jpg' %}" alt="zacharygervaise-379x558.jpg">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="artist-info">
                         <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://instagram.com/zachgervaise?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
                         </ul> 
                         <h1>Zachary Gervaise</h1> 
                         <h4>Writer - Sydney</h4>  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>  
+                        <p>Zach Gervaise is an Australian singer-songwriter. In early 2020 just after the global pandemic struck, he and his brother decided to build a studio in their hometown of Wollongong. After years of writing and recording music for his previous bands and other artists, Zach started recording music for his solo project. The result is a raw and honest approach to songwriting and a sound that is unequivocally him.</p>
+                        <p>Zach's previous bands The Maze and GOSH have combined for over 3 million streams across all platforms and has seen him support acts like Lime Cordiale and The Vanns at venues such as The Metro Theatre and Sydney Convention Center. Zach is a graduate of the Talent Development Project along with artists like Angus and Julia Stone and David Le'aupepe from Gang Of Youths. Zach credits winning the Triple J competition to perform at Yours and Owls Festival as one of his career highlights.</p>  
                         <!--address.html was here-->
                     </div>
                 </div>

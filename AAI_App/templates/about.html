@@ -14,7 +14,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-image">
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/about/darceygervaise-500x500.jpg' %}" alt="Darcey"> <!--was about/1.jpg-->
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/about/webp/darceygervaise-500x500.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/about/darceygervaise-500x500.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/about/darceygervaise-500x500.jpg' %}" alt="Darcey">
+                        </picture>   
                     </div>
                 </div>
                 <div class="col-md-6">

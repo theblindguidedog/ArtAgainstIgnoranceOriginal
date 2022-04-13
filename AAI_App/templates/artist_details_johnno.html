@@ -10,7 +10,11 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="artist-image">
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/johnno-379x558.jpg' %}" alt="johnno-379x558.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/johnno-379x558.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/johnno-379x558.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/johnno-379x558.jpg' %}" alt="johnno-379x558.jpg">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-sm-8">
@@ -58,7 +62,7 @@
                     </ul>
                     <br/><br/><br/>
                     <ul>
-                        <li><a href="{% url 'artists2' %}"  class="btn btn-info">Back</a></li>
+                        <li><a href="{% url 'artists' %}#artists-bottom"  class="btn btn-info">Back</a></li>
                     </ul> 
                 </nav>                     
             </div>

@@ -10,15 +10,17 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="artist-image">
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/briangervaise-379x558.jpg' %}" alt="briangervaise-379x558.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/briangervaise-379x558.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/briangervaise-379x558.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/briangervaise-379x558.jpg' %}" alt="briangervaise-379x558.jpg">
+                        </picture>        
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="artist-info">
                         <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://youtube.com/user/ZachGervaise"><i class="fa fa-youtube"></i></a></li>
                         </ul> 
                         <h1>Brian Gervaise</h1> 
                         <h4>Concept Development - Sydney</h4>  

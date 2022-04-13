@@ -17,7 +17,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" alt="johnno-315x475.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/johnno-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" alt="johnno-315x475.jpg">
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -32,7 +36,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/deconvertedman-315x475.jpg' %}" alt="deconvertedman-315x475.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/deconvertedman-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/deconvertedman-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/deconvertedman-315x475.jpg' %}" alt="deconvertedman-315x475.jpg">
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>

@@ -37,7 +37,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/darceygervaise-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="Image of Darcey Gervaise"></a>
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -52,7 +56,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" alt="ganna-315x475.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/ganna-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" alt="ganna-315x475.jpg">
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -67,7 +75,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" alt="Blatant Blatheist">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/blatantblatheist-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" alt="Blatant Blatheist">
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -82,7 +94,11 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="artists">
                         <div class="artists-overlay"></div>
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/nerdyrodent-315x475.jpg' %}" alt="nerdyrodent-315x475.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/nerdyrodent-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/nerdyrodent-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" src="{% static 'AAI_App/aai_images/artists/nerdyrodent-315x475.jpg' %}" alt="nerdyrodent-315x475.jpg">
+                        </picture>
                         <div class="artists-info">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -201,8 +217,8 @@
             <div class="col-sm-6">                       
                 <div class="festival-schedule live-shows">
                     <div class="section-title">
-                        <a href="{% url 'articles' %}"><h1>News</h1></a>
-                        <a href="{% url 'articles' %}"><h2>Updates</h2></a>
+                        <h1>News</h1>
+                        <h2>Updates</h2>
                     </div>
                     <div class="tab-content">
                         <ul>
@@ -211,18 +227,18 @@
                                     <div class="image-overlay"></div>
                                     <img class="img-responsive" src="{% static 'AAI_App/aai_images/gallery/The_Utopians_Abbey_Rd-150x183.jpg' %}" alt="Image">
                                     <div class="time">
-                                        <a href="{% url 'article_details_utopians' %}"><h1>19<span>Feb</span></h1></a>
+                                        <h1>19<span>Feb</span></h1>
                                     </div>                                        
                                 </div>
                                 <div class="text-left">
-                                    <a href="{% url 'article_details_utopians' %}"><h2>Why The Utopians</h2></a>
-                                    <a href="{% url 'article_details_utopians' %}"><h5>Brian Gervaise</h5></a>
+                                    <h2>Why The Utopians</h2></a>
+                                    <h5>Brian Gervaise</h5></a>
                                 </div>
                             </li>
                         </ul>
-                    </div> <!-- tab-content -->
-                </div> <!-- festival-schedule -->
-            </div> <!-- col-sm-6 -->
+                    </div><!-- tab-content -->
+                </div><!-- festival-schedule -->
+            </div><!-- col-sm-6 -->
         </div><!-- row -->
     </div><!-- container -->
 </div><!-- gallery section -->
@@ -281,22 +297,17 @@
 
 <br/><br/>
 
-<div class="container text-center">
+<div class="container text-center section-padding">
 
-    <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:18px;font-style:oblique;font-weight:bold;letter-spacing:8px;">Please consider supporting us on <a href="https://artagainstignorance.bandcamp.com/music" target="_blank">Bandcamp</a> or <a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4" target="_blank">Spotify</a></p>
+    <p style="font-size:18px;font-style:oblique;font-weight:bold;letter-spacing:8px;">Please consider supporting us on <a href="https://artagainstignorance.bandcamp.com/music" target="_blank">Bandcamp</a> or <a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4" target="_blank">Spotify</a></p>
 
 </div>
 
-
 <div class="products-section section-padding">
-
-    <br/>
-
     <div class="section-title">
         <a href="{% url 'shop' %}"><h1>Merch</h1></a>
         <a href="{% url 'index' %}"><h2>Art Against Ignorance</h2></a>
     </div>
-
     <div class="container text-center">
         <div class="row">
             <div class="col-sm-6 col-md-4">
@@ -308,8 +319,8 @@
                         <picture>
                             <source srcset="{% static 'AAI_App/aai_images/shop/webp/liamgervaise-668x498.webp' %}" type="image/webp">
                             <source srcset="{% static 'AAI_App/aai_images/shop/liamgervaise-668x498.jpg' %}" type="image/jpeg">
-                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/shop/liamgervaise-668x498.jpg' %}" alt="Image of Darcey Gervaise"></a>
-                    </picture>
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/shop/liamgervaise-668x498.jpg' %}" alt="Image of Liam Gervaise"></a>
+                        </picture>
                 </div>
             </div>
 

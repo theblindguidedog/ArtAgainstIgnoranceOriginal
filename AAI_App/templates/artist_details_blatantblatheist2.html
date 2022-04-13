@@ -10,19 +10,26 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="artist-image">
-                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-379x558.jpg' %}" alt="blatantblatheist-379x558.jpg">
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/blatantblatheist-379x558.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/blatantblatheist-379x558.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-379x558.jpg' %}" alt="blatantblatheist-379x558.jpg">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="artist-info">
                         <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://twitter.com/bblatheist?s=21&t=mOK0UhkdnKAOpsQ08SbTYQ"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://youtube.com/c/BLATANTBLATHEIST"><i class="fa fa-youtube"></i></a></li>
                         </ul> 
                         <h1>Blatant Blatheist</h1> 
                         <h4>Rap Artist - COLORADO SPRINGS</h4>  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>   
+                        <p>Blatant is all about expressing your truth, whatever that may be.
+                            Growing up in St. Louis, MO and only realizing the damage caused by religion after leaving it, he found the motivation he needed to pursue his love of performing, and finally having a purpose in his art.
+                            Although his first love is comedy and making people laugh, the other job of a comedian is to make people think. Musically the same approach is taken. Always honest, and always trying to push progress into the minds of anyone who will listen.
+                            Whether you need a laugh, a good rebuttal for your next debate, or just something to vibe to, Blatant Blatheist has you covered. Oh, he draws and stuff too. Yeah… he’s an artist… he does art stuff.
+                            -Written and approved by Blatant Blatheist… who swears he’s not a narcissist 😂🤣</p>   
                         <!--address.html was here-->                     
                     </div>
                 </div>
@@ -58,7 +65,7 @@
                     </ul>
                     <br/><br/><br/>
                     <ul>
-                        <li><a href="{% url 'artists2' %}"  class="btn btn-info">Back</a></li>
+                        <li><a href="{% url 'index' %}"  class="btn btn-info">Back</a></li>
                     </ul>
                 </nav>                     
             </div>

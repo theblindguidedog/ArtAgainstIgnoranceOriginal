@@ -122,17 +122,12 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = Path(BASE_DIR, 'staticfiles') # Works with or without this as far as I can tell
 
-STATICFILES_DIRS = [
-    Path(BASE_DIR, 'AAI_App', 'static'),
-    Path(BASE_DIR, 'events', 'static'),
-]
 
-# Another possible way of doing it (maybe)
-
-#STATIC_URL = 'static/'
+# I had STATICFILES_DIRS BEFORE BUT DON'T THINK I NEED IT ( WE'LL SEE )
 
 #STATICFILES_DIRS = [
-#    Path(BASE_DIR, 'staticfiles'),
+#    Path(BASE_DIR, 'AAI_App', 'static'),
+#    Path(BASE_DIR, 'events', 'static'),
 #]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
