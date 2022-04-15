@@ -2189,6 +2189,12 @@ textarea.form-control {
     color: #fff;
 }
 
+
+.promotion.bg-transparent {
+    background-image: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Twitter Feed */
 
 .twitter-feed  {
@@ -3047,12 +3053,7 @@ textarea.form-control {
     padding-bottom: 75px;    
 }
 
-/* Promotion */
 
-.promotion.bg-transparent {
-    background-image: inherit;
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
 /* Become Sponsors */
 
@@ -3407,6 +3408,8 @@ textarea.form-control {
     position: relative;
     overflow: hidden;
     text-align: center;
+    border: 2px solid rgba(0, 0, 0);
+    padding:5px 5px 5px 5px;
 }
 
 .album-overlay {
@@ -3804,7 +3807,7 @@ textarea.form-control {
 }
 
 .audio-album .jp-controls {
-    background-image: url(../aai_images/thumbnail/music/aai_instagram_post-270x310.png);/*../images/album/1.jpg*/
+    background-image: url(../aai_images/thumbnail/music/Triangle-270x310.jpg);/*../images/album/1.jpg*/
     background-size: contain;
     width: 110px;
     height: 110px;

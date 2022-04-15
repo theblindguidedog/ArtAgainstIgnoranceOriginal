@@ -1,6 +1,26 @@
 /* MY CSS */
 
-/*  interesting css property style="transform:rotate(45deg);"  */
+.support-us {
+    font-size:20px;
+    font-weight:normal;
+    letter-spacing:8px;
+    padding-bottom:50px;
+}
+
+
+.hr-dark {
+    margin: auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+/*  css properties - transform: rotate(45deg); text-decoration: underline;  */
 
 .no-web .body-base {
     background-image: url(../aai_images/bg/2.jpg);
@@ -59,3 +79,74 @@
 }
 
 
+/* CUSTOM CSS from MAIN.CSS */
+
+/* Promotion */
+
+.promotion {
+    text-align: center;
+    background-color: #802b43;  /* #802b43 */    
+}
+
+.promotion-content {
+    padding-top: 70px;/*130px*/
+    padding-bottom: 70px;
+}
+
+.promotion.bg-transparent {
+    background-image: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promotion h2 {
+    font-size: 116px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'aller_displayregular';
+}
+
+.promotion.contact {
+    font-size: 25px;
+    color: #fff;
+    line-height: 32px;
+    position: relative;
+    background-image: url(../aai_images/bg/musical_notes_overlay.png); /* was bg/11.jpg */
+    z-index: 1;
+}
+
+.promotion.contact h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'aller_displayregular';
+}
+
+.promotion.contact a {
+    color: #fff;
+}
+
+.promotion.contact a:hover {
+    color: rgb(59, 253, 2); /* was #000 */
+}
+
+
+.promotion.contact .promotion-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 20, 91, 0.7);
+    z-index: -1;
+}
+
+.promotion.contact .social {
+    margin-top: 30px;
+}
+
+.promotion.bg-transparent {
+    background-image: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}

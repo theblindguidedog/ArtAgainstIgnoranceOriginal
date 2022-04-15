@@ -1,7 +1,3 @@
-#from argparse import ONE_OR_MORE
-#from turtle import setundobuffer
-#from unittest.util import three_way_cmp
-
 from django.shortcuts import render
 
 def index(request):
@@ -43,9 +39,6 @@ def news_details_utopians(request):
 def artists(request):
     return render(request, 'artists.html', {})
 
-def artists2(request):
-    return render(request, 'artists2.html', {})
-
 def artist_details_briangervaise(request):
     return render(request, 'artist_details_briangervaise.html', {})
 
@@ -58,17 +51,11 @@ def artist_details_darceygervaise(request):
 def artist_details_darceygervaise2(request):
     return render(request, 'artist_details_darceygervaise2.html', {})
 
-def artist_details_scottgervaise(request):
-    return render(request, 'artist_details_scottgervaise.html', {})
-
 def artist_details_wally(request):
     return render(request, 'artist_details_wally.html', {})
 
 def artist_details_johnno(request):
     return render(request, 'artist_details_johnno.html', {})
-
-def artist_details_johnno2(request):
-    return render(request, 'artist_details_johnno2.html', {})
 
 def artist_details_ganna(request):
     return render(request, 'artist_details_ganna.html', {})
@@ -88,8 +75,7 @@ def artist_details_blatantblatheist(request):
 def artist_details_blatantblatheist2(request):
     return render(request, 'artist_details_blatantblatheist2.html', {})
 
-def artist_details_deconvertedman(request):
-    return render(request, 'artist_details_deconvertedman.html', {})
+
 
 
 
