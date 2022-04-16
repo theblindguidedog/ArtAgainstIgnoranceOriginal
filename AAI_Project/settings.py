@@ -23,6 +23,8 @@ ALLOWED_HOSTS = [
     'https://artagainstignorance.herokuapp.com',
     'https://artagainstignorance.com',
     'https://artagainstignorance.art',
+    'http://artagainstignorance.com',
+    'http://artagainstignorance.art',
     ],
 
 
@@ -57,8 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            Path(BASE_DIR, 'AAI_App', 'templates'),
-            Path(BASE_DIR, 'events', 'templates'),    
+            BASE_DIR / 'AAI_App/templates',
+            BASE_DIR / 'events/templates',    
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -118,17 +120,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT = Path(BASE_DIR, 'staticfiles') # Works with or without this as far as I can tell
-
-
-# I had STATICFILES_DIRS BEFORE BUT DON'T THINK I NEED IT ( WE'LL SEE )
 
 #STATICFILES_DIRS = [
-#    Path(BASE_DIR, 'AAI_App', 'static'),
-#    Path(BASE_DIR, 'events', 'static'),
-#]
+#    BASE_DIR / 'AAI_App/static',
+#    BASE_DIR / 'events/static',
+#] This causes it to find multiple versions of the same files
+
+#STATIC_ROOT = [
+#   BASE_DIR / 'staticfiles',
+#]  Works with or without this as far as I can tell
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

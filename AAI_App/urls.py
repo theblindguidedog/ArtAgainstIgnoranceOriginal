@@ -27,6 +27,7 @@ urlpatterns = [
     path('artist_details_nerdyrodent2', views.artist_details_nerdyrodent2, name="artist_details_nerdyrodent2"),
     path('artist_details_blatantblatheist', views.artist_details_blatantblatheist, name="artist_details_blatantblatheist"),
     path('artist_details_blatantblatheist2', views.artist_details_blatantblatheist2, name="artist_details_blatantblatheist2"),
+    path('critical-thinking', views.critical_thinking, name="critical-thinking"),
     
     
 ]
