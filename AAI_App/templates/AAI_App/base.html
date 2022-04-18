@@ -112,11 +112,6 @@
                                     </div>
                                 </a>
                             </li>
-
-
-                            <!-- menu_music.html was here -->
-                            <!-- menu_t-shirts.html -->
-                            <!-- Dropdown Pages Menu was here -->
                         </ul>
                     </nav>
 
@@ -124,20 +119,16 @@
 
                 </div><!-- container -->
             </div><!-- navbar -->                                
-        </header><!-- header -->
-        
+        </header><!-- header -->    
         <br/><br/>
-
                 {% block content %}{% endblock content %}
-
         <br/><br/>
-
         <div class="promotion contact"><!--promotion contact section-padding bg-image after-->
             <div class="promotion-overlay"></div>
             <div class="promotion-content">
                 <div class="support-us">Please consider supporting us on <a href="https://artagainstignorance.bandcamp.com/music">Bandcamp</a> or <a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4">Spotify</a></div>
                 <br/>
-                <h3><a href="mailto:artagainstignorance7@gmail.com">artagainstignorance7@gmail.com</a></h3>
+                <h3 style="font-size:3.5vw;"><a href="mailto:artagainstignorance7@gmail.com">artagainstignorance7@gmail.com</a></h3>
                 <ul class="social list-inline">
                     <li><a href="http://www.facebook.com/artagainstignorance"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4"><i class="fa fa-spotify"></i></a></li>
@@ -146,11 +137,14 @@
                 </ul>
             </div>
         </div>
-
         <div class="footer bg-white"> <!-- before-after -->
             <div class="container">
                 <div class="copyright">
-                    <p>Copyright 2022 &copy; <a href="{% url 'index' %}">Art Against Ignorance</a></p>
+                    <p>Copyright 
+                        <script type="text/Javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                    &copy; <a href="{% url 'index' %}">Art Against Ignorance</a></p>
                 </div>  
                 <div class="footer-memu">
                     <ul>

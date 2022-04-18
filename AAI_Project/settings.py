@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AAI_App.apps.AaiAppConfig',
     'events.apps.EventsConfig',
+    'News.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'AAI_App/templates',
-            BASE_DIR / 'events/templates',    
+            BASE_DIR / 'events/templates',
+            BASE_DIR / 'News/templates',   
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,15 +124,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-#STATICFILES_DIRS = [
-#    BASE_DIR / 'AAI_App/static',
-#    BASE_DIR / 'events/static',
-#] This causes it to find multiple versions of the same files
-
-#STATIC_ROOT = [
-#   BASE_DIR / 'staticfiles',
-#]  Works with or without this as far as I can tell
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

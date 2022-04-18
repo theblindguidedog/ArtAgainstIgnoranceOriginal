@@ -5,7 +5,7 @@
 {% block content %}
 
 
-<div class="section-padding before"><!--about-section about -->
+<div class="section-padding before" id="about"><!--about-section about -->
 
     <div class="section-title">
         <a href="{% url 'index' %}"><h1>HOME</h1></a>
@@ -210,7 +210,7 @@
                 </div>
             </div>
             <div class="col-sm-6">                       
-                <div class="festival-schedule live-shows">
+                <div class="festival-schedule live-shows" id="news">
                     <div class="section-title">
                         <h1>News</h1>
                         <h2>Updates</h2>
@@ -219,14 +219,12 @@
                         <ul>
                             <li class="festival-info">
                                 <div class="festival-image">
-                                    <div class="image-overlay"></div>
-                                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/The_Utopians_Abbey_Rd-150x183.jpg' %}" alt="Image">
-                                    <div class="time">
-                                        <h1>4<span>Apr</span></h1>
-                                    </div>                                        
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_aron_ra' %}"><img class="img-responsive" src="{% static 'AAI_App/aai_images/news/aron_ra-150x183.png' %}" alt="Image"></a>
+                                <!-- pageparts/news/time.html was here -->                                        
                                 </div>
                                 <div class="text-left">
-                                    <h2>Aron Ra To Star</h2>
+                                    <a href="{% url 'news_details_aron_ra' %}"><h2>Aron Ra To Star</h2></a>
                                     <h5>Brian Gervaise</h5>
                                 </div>
                             </li>
@@ -236,14 +234,12 @@
                         <ul>
                             <li class="festival-info">
                                 <div class="festival-image">
-                                    <div class="image-overlay"></div>
-                                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/The_Utopians_Abbey_Rd-150x183.jpg' %}" alt="Image">
-                                    <div class="time">
-                                        <h1>22<span>Mar</span></h1>
-                                    </div>                                        
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_lawrence_krauss' %}"><img class="img-responsive" src="{% static 'AAI_App/aai_images/news/lawrence_krauss-150x183.png' %}" alt="Image"></a>
+                                <!-- pageparts/news/time.html was here -->                                        
                                 </div>
                                 <div class="text-left">
-                                    <h2>Lawrence Krauss</h2>
+                                    <a href="{% url 'news_details_lawrence_krauss' %}"><h2>Lawrence Krauss</h2></a>
                                     <h5>Brian Gervaise</h5>
                                 </div>
                             </li>
@@ -253,14 +249,12 @@
                         <ul>
                             <li class="festival-info">
                                 <div class="festival-image">
-                                    <div class="image-overlay"></div>
-                                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/The_Utopians_Abbey_Rd-150x183.jpg' %}" alt="Image">
-                                    <div class="time">
-                                        <h1>25<span>Feb</span></h1>
-                                    </div>                                        
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_richard_dawkins' %}"><img class="img-responsive" src="{% static 'AAI_App/aai_images/news/richard_dawkins-150x183.png' %}" alt="Image"></a>
+                                    <!-- pageparts/news/time.html was here -->                                                 
                                 </div>
                                 <div class="text-left">
-                                    <h2>Richard Dawkins</h2>
+                                    <a href="{% url 'news_details_richard_dawkins' %}"><h2>Richard Dawkins</h2></a>
                                     <h5>Brian Gervaise</h5>
                                 </div>
                             </li>
@@ -270,14 +264,12 @@
                         <ul>
                             <li class="festival-info">
                                 <div class="festival-image">
-                                    <div class="image-overlay"></div>
-                                    <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/The_Utopians_Abbey_Rd-150x183.jpg' %}" alt="Image">
-                                    <div class="time">
-                                        <h1>15<span>Jan</span></h1>
-                                    </div>                                        
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_utopians' %}"><img class="img-responsive" src="{% static 'AAI_App/aai_images/news/utopians-150x183.png' %}" alt="utopians-150x183.png"></a>
+                                <!-- pageparts/news/time.html was here -->                                        
                                 </div>
                                 <div class="text-left">
-                                    <h2>Critical Thinking</h2>
+                                    <a href="{% url 'news_details_utopians' %}"><h2>Critical Thinking</h2></a>
                                     <h5>Brian Gervaise</h5>
                                 </div>
                             </li>

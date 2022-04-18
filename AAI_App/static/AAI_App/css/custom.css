@@ -1,9 +1,66 @@
+/* TEST CSS */
+
+.rcorners1 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .rcorners3 {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .rcorners4 {
+    border-radius: 15px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+
 /* MY CSS */
 
+#my-container {
+    background-color: #FFFFFF;/*#E0E0E0*/
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    color: #474747;
+    border-radius: 5px 5px 25px 25px;
+    padding:10px 15px 10px 15px;
+}
+
+#my-wrapper {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#my-main {
+    max-width: 100%;   
+    padding: 5px 20px 15px 20px;
+}
+
+
 .support-us {
-    font-size:20px;
-    font-weight:normal;
-    letter-spacing:8px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #f0f0f0;
     padding-bottom:50px;
 }
 
@@ -150,3 +207,27 @@
     background-image: inherit;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+/* Blog Details */
+
+.entry-post .entry-meta i {
+    margin-right: 10px;
+}
+
+.entry-post .entry-meta  li+li {
+    margin-left: 10px;
+}
+
+.entry-post .entry-meta  li:first-child {
+    text-transform: uppercase;
+}
+
+.entry-post .entry-meta a:hover {
+    color: rgb(59, 253, 2);
+}
+
+.entry-post {
+    padding-top:50px;
+}
+
+

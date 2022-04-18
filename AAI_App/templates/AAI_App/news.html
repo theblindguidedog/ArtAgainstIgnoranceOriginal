@@ -1,57 +1,45 @@
-{% extends "AAI_App/base.html" %}
+{% extends "AAI_App/base_news.html" %}
 
 {% load static %}
 
-{% block content %}
+{% block news %}
 
-<div class="gallery-section blog-section blog section-padding before">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="entry-post">
-                    <div class="entry-thumbnail">
-                        <picture>
-                            <source srcset="{% static 'AAI_App/aai_images/news/webp/omni-q.webp' %}" type="image/webp">
-                            <source srcset="{% static 'AAI_App/aai_images/news/omni-q.jpg' %}" type="image/jpeg">
-                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/omni-q.jpg' %}" alt="omni-q.jpg">
-                        </picture>
-                    </div>
-                    <div class="post-content">
-                        <div class="time">
-                            <a href="{% url 'news_details_utopians' %}">19 <span>feb</span></a>
-                        </div>
-                        <div class="entry-title">
-                           <a href="{% url 'news_details_utopians' %}">Why The Utopians</a>
-                       </div> 
-                       <p>I get asked this question all the time. The truth is that...</p>
-                       <div class="post-icons">
-                           <a href="{% url 'news_details_utopians' %}"><i class="fa fa-chevron-circle-right"></i></a>
-                       </div>
-                    </div>
-                </div>
+<div class="container">
+    <div class="entry-post">
+        <div class="img-thumbnail"> <!-- was entry-thumbnail -->
+            <picture>
+                <source srcset="{% static 'AAI_App/aai_images/news/webp/news_bg-1600x750.webp' %}" type="image/webp">
+                <source srcset="{% static 'AAI_App/aai_images/news/news_bg-1600x750' %}" type="image/jpeg">
+                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/news_bg-1600x750.jpg' %}" alt="news_details-1600x750.jpg">
+            </picture>
+        </div>             
+        <div class="post-content">
+            <div class="time">
+                00 <span>Jan</span>
             </div>
-        </div><!-- row -->
+            <div class="entry-title">
+                <h1>Title</h1>
+            </div> 
+            <ul class="entry-meta list-inline">
+                <li><a href="{% url 'news_details' %}"><i class="fa fa-user"></i>By OP</a></li>
+            </ul>
+        </div>
+    </div><!-- entry-post -->
+    <div id="my-container">
+        <div id="my-wrapper">
+            <section id="my-main">
+                <p>Early access is available by supporting us on <a href="https://www.patreon.com/artagainstignorance">Patreon</a></p>
+            </section>
+            <div class="row text-center section-padding">
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'index' %}#news"  class="btn btn-info">Back</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </div><!-- my-wrapper -->
+    </div><!-- my-container-->                 
+</div><!-- container -->          
 
-        <div class="row text-center">
-            <nav>
-                <ul class="pagination">
-                    <li>
-                        <a href="{% url 'news' %}" aria-label="Previous">
-                        <span aria-hidden="true">&#8249;</span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-                    <li class="active"><a href="{% url 'news' %}">1</a></li>
-                    <li>
-                        <a href="{% url 'news' %}" aria-label="Next">
-                        <span aria-hidden="true">&#8250;</span>
-                        <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>                     
-        </div>                
-    </div><!-- container -->           
-</div><!-- blog section -->
 
-{% endblock %}
+{% endblock news %}

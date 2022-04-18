@@ -1,0 +1,38 @@
+{% extends "AAI_App/base_news.html" %}
+
+{% load static %}
+
+{% block news %}
+
+<div class="container">
+    <div id="my-container">
+        <div id="my-wrapper">
+            <section id="my-main">
+                <div class="entry-post">
+                    <div class="img-thumbnail"> <!-- was entry-thumbnail -->
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/news/webp/news_bg-1600x750.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/news/news_bg-1600x750' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/news_bg-1600x750.jpg' %}" alt="news_details-1600x750.jpg">
+                        </picture>
+                    </div>             
+                    <div class="post-content">
+                        <div class="time">
+                            00 <span>Jan</span>
+                        </div>
+                        <div class="entry-title">
+                            <h1>Title</h1>
+                        </div> 
+                        <ul class="entry-meta list-inline">
+                            <li><a href="{% url 'news_details' %}"><i class="fa fa-user"></i>By OP</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <p>Early access is available by supporting us on <a href="https://www.patreon.com/artagainstignorance">Patreon</a></p>
+            </section>
+        </div>
+    </div>                   
+</div><!-- container -->         
+
+
+{% endblock news %}

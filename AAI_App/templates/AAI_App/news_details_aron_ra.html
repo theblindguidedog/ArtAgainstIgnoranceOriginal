@@ -1,0 +1,43 @@
+{% extends "AAI_App/base_news.html" %}
+
+{% load static %}
+
+{% block news %}
+
+<div class="container">
+    <div class="entry-post">
+        <div class="img-thumbnail"> <!-- was entry-thumbnail -->
+            <picture>
+                <source srcset="{% static 'AAI_App/aai_images/news/webp/aron_ra-1624x750.webp' %}" type="image/webp">
+                <source srcset="{% static 'AAI_App/aai_images/news/aron_ra-1624x750.png' %}" type="image/png">
+                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/aron_ra-1624x750.png' %}" alt="aron_ra-1624x750.png">
+            </picture>
+        </div>             
+        <div class="post-content">
+            <!-- pageparts/news/time.html was here -->
+            <div class="entry-title">
+                <h1>Aron Ra to Star in Music Video</h1>
+            </div> 
+            <!-- pageparts/news/author.html was here -->
+        </div>
+    </div><!-- entry-post -->
+    <div id="my-container">
+        <div id="my-wrapper">
+            <section id="my-main">
+                <p>Atheist activist and content creator <a href="https://www.youtube.com/c/AronRa">Aron Ra</a> will feature in our next music video release 'I know you I know'. The concept symbolises how racism and xenophobia are born out of ignorance. </p>
+                <p>We greatly appreciate Aron being able to find the time to film his parts for the video and realise through communicating and working with him how busy his schedule is and the amount of travel he does. Updates on music video progress will appear here on our website.</p> 
+                <p>Early access is available by supporting us on <a href="https://www.patreon.com/artagainstignorance">Patreon</a></p>
+            </section>
+            <div class="row text-center section-padding">
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'index' %}#news"  class="btn btn-info">Back</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </div><!-- my-wrapper -->
+    </div><!-- my-container-->                 
+</div><!-- container -->         
+
+
+{% endblock news %}
