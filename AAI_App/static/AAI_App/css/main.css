@@ -512,7 +512,7 @@ ul.sub-menu {
 }
 
 .about-section .about-content {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .about-section.about .about-content {
@@ -569,7 +569,7 @@ ul.sub-menu {
 }
 
 .about-festival .about-content {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
@@ -781,8 +781,8 @@ ul.sub-menu {
 }
 
 .gallery-section .section-title {
-    margin-bottom: 40px;
-    padding-top: 55px;
+    margin-bottom: 20px;
+    padding-top: 0px;
     text-align: left;
 }
 
@@ -3814,7 +3814,7 @@ textarea.form-control {
     text-align: center;
     position: relative;
     z-index: 1;
-    margin-right: 20px;
+    margin-right:20px;
 }
 
 .audio-album li a img {

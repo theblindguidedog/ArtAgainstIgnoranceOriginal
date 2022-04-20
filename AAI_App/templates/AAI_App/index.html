@@ -4,33 +4,21 @@
 
 {% block content %}
 
-
 <div class="section-padding before" id="about"><!--about-section about -->
-
     <div class="section-title">
         <a href="{% url 'index' %}"><h1>HOME</h1></a>
         <a href="{% url 'index' %}"><h2>Art Against Ignorance</h2></a>
     </div>
-
     <div class="container mystyle">
-        <p> Art Against Ignorance is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience.
+        <p> Art Against Ignorance is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience. We are a growing community of creative people collaborating to try and raise awareness, inspire unity and encourage change by harnessing the power of music for the greater good. We artistically explore, question and challenge using words, music and video.
             <br/><br/>
-            We are a growing community of creative people collaborating to try and raise awareness, inspire unity and encourage change by harnessing the power of music for the greater good.
-            <br/><br/>
-            We artistically explore, question and challenge using words, music and video.
-            <br/><br/>
-            Our goal is to connect with people on an intellectual level via the emotions.
-            <br/><br/>
-            We hope to arouse wonder and elevate the conversation with thought provoking concepts brought to life by talented humans from all walks of life all around the world. 
+            Our goal is to connect with people on an intellectual level via the emotions. We hope to arouse wonder and elevate the conversation with thought provoking concepts brought to life by talented humans from all walks of life all around the world. 
         </p>
-        <br/>
     </div>
-
     <div class="section-title">
         <a href="{% url 'artists' %}"><h1>Artists</h1></a>
         <a href="{% url 'artists' %}"><h2>A Global Community</h2></a>
     </div>
-
     <div class="about-content">
         <div class="container">
             <div class="row">
@@ -109,8 +97,6 @@
         </div><!-- container -->
     </div><!-- about content -->
 </div><!-- about section -->
-
-
 <div class="gallery-section"><!--gallery-block was in this div-->
     <div class="container">
         <div class="row">
@@ -280,20 +266,17 @@
         </div><!-- row -->
     </div><!-- container -->
 </div><!-- gallery section -->
-
 <div class="audio-album section-padding after">
-
     <div class="section-title" id="index_music">
         <h1>Music</h1>
         <h2>Latest Releases</h2>
     </div>
-    
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <div class="left-content">
                     <div class="album-image">
-                        <img  class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" alt="Triangle-270x310.jpg">
+                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" alt="Triangle-270x310.jpg">
                     </div> 
                     <!--form.html was here-->
                 </div>                                               
@@ -332,6 +315,4 @@
         </div><!-- row -->     
     </div><!-- container -->
 </div>
-<br/><br/>
-
 {% endblock content %}

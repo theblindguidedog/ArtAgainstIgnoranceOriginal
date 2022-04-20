@@ -1,5 +1,11 @@
 /* TEST CSS */
 
+.bottom {
+    position:absolute;                 
+    bottom:0;                         
+    left:20px;                         
+}
+
 .rcorners1 {
     border-radius: 15px 50px 30px 5px;
     background: #73AD21;
@@ -36,11 +42,8 @@
 
 #my-container {
     background-color: #FFFFFF;/*#E0E0E0*/
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: justify;
-    color: #474747;
-    border-radius: 5px 5px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+    border: solid 2px #3f3639a4;
     padding:10px 15px 10px 15px;
 }
 
@@ -52,13 +55,17 @@
 
 #my-main {
     max-width: 100%;   
-    padding: 5px 20px 15px 20px;
+    padding: 15px 20px 15px 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: justify;
+    color: #474747;
+    font-size: 22px;
 }
 
 
 .support-us {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: inherit;
     text-align: center;
     color: #f0f0f0;
     padding-bottom:50px;
@@ -94,9 +101,10 @@
     color: rgba(0, 0, 0, 1);
     opacity:0.5;
 	font-weight:400;
-    font-size:25px;
+    font-size:22px;
     line-height:auto;
     letter-spacing:auto;
+    padding-bottom: 20px;
 }
 
 .noHover{
@@ -146,8 +154,8 @@
 }
 
 .promotion-content {
-    padding-top: 70px;/*130px*/
-    padding-bottom: 70px;
+    padding-top: 50px;/*130px*/
+    padding-bottom: 50px;
 }
 
 .promotion.bg-transparent {
@@ -157,7 +165,7 @@
 
 .promotion h2 {
     font-size: 116px;
-    color: #fff;
+    color: whitesmoke;
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -165,9 +173,9 @@
 }
 
 .promotion.contact {
-    font-size: 25px;
-    color: #fff;
-    line-height: 32px;
+    font-size: 22px;
+    color: whitesmoke;
+    line-height: 30px;
     position: relative;
     background-image: url(../aai_images/bg/musical_notes_overlay.png); /* was bg/11.jpg */
     z-index: 1;
@@ -181,7 +189,7 @@
 }
 
 .promotion.contact a {
-    color: #fff;
+    color: whitesmoke;
 }
 
 .promotion.contact a:hover {

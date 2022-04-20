@@ -87,12 +87,12 @@
 /*  css properties - transform: rotate(45deg); text-decoration: underline;  */
 
 .no-web .body-base {
-    background-image: url(../aai_images/bg/2.jpg);
+    background-image: url("../aai_images/bg/2.24d87f8fd532.jpg");
     z-index: 1;    
 }
 
 .webp .body-base {
-    background-image: url(../aai_images/bg/webp/2.webp);
+    background-image: url("../aai_images/bg/webp/2.7c99e64601f9.webp");
     z-index:1;    
 }
 
@@ -177,7 +177,7 @@
     color: whitesmoke;
     line-height: 30px;
     position: relative;
-    background-image: url(../aai_images/bg/musical_notes_overlay.png); /* was bg/11.jpg */
+    background-image: url("../aai_images/bg/musical_notes_overlay.e3bfc9a4b260.png"); /* was bg/11.jpg */
     z-index: 1;
 }
 
