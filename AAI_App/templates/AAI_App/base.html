@@ -39,10 +39,8 @@
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    
+        <![endif]-->    
     </head>
-
     <body class="body-base-slider">
         <header id="navigation">  
             <div class="navbar navbar-fixed-top">
@@ -75,26 +73,7 @@
                                         <span class="bar bar-10"></span>
                                     </div>
                                 </a>
-                            </li>
-                            {% url 'artists' as url %}
-                            <li class="nav-item {% if request.path == url %}active{% endif %}">
-                                <a href="{% url 'artists' %}">
-                                    ARTISTS
-                                    <div class="equalizer">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                        <span class="bar bar-4"></span>
-                                        <span class="bar bar-5"></span>
-                                        <span class="bar bar-6"></span>
-                                        <span class="bar bar-7"></span>
-                                        <span class="bar bar-8"></span>
-                                        <span class="bar bar-9"></span>
-                                        <span class="bar bar-10"></span>
-                                    </div>
-                                </a>
-                            </li>
-                            
+                            </li>                            
                             <li>
                                 <a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">
                                     T-SHIRTS
@@ -147,7 +126,7 @@
                 <div class="footer-memu">
                     <ul>
                         <li><a href="{% url 'index' %}">Home</a></li>
-                        <li><a href="{% url 'artists' %}">Artists</a></li>
+                        <li><a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">T-Shirts</a></li>
                     </ul>
                 </div><!-- footer-memu -->                      
             </div><!-- container -->
@@ -180,6 +159,9 @@
         <script src="{% static 'AAI_App/js/cubeportfolio.min.js' %}"></script>    
         <script src="{% static 'AAI_App/js/jplayer.source.js' %}"></script>
         <script src="{% static 'AAI_App/js/main.js' %}"></script>
+
+        <!-- MY JS -->
+        <!--<script src="{% static 'AAI_App/js/myplayer.source.js' %}"></script>-->
   
     </body>
 </html>
