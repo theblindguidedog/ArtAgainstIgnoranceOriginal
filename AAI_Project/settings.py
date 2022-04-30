@@ -17,15 +17,7 @@ SECRET_KEY = 'django-insecure-_^j$$m%bi-!-b%g9$yq8ygb6+do%cn=uu*_+ucogex^oo0hkba
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'https://artagainstignorance.herokuapp.com',
-    'https://artagainstignorance.com',
-    'https://artagainstignorance.art',
-    'http://artagainstignorance.com',
-    'http://artagainstignorance.art',
-    ],
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -40,7 +32,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AAI_App.apps.AaiAppConfig',
     'events.apps.EventsConfig',
-    'News.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +53,6 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR / 'AAI_App/templates',
             BASE_DIR / 'events/templates',
-            BASE_DIR / 'News/templates',   
             ],
         'APP_DIRS': True,
         'OPTIONS': {

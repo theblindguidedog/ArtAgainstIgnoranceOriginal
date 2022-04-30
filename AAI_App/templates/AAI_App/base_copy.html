@@ -1,0 +1,168 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Theme Region">
+       	<meta name="description" content="">
+
+        <title>Art Against Ignorance</title>
+
+         <!-- Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
+		
+        <!-- icons -->
+        <link rel="icon" href="{% static 'AAI_App/images/ico/favicon.ico' %}"> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'AAI_App/images/ico/apple-touch-icon-144-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'AAI_App/images/ico/apple-touch-icon-114-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'AAI_App/images/ico/apple-touch-icon-72-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% static 'AAI_App/images/ico/apple-touch-icon-57-precomposed.png' %}"> 
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'AAI_App/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'AAI_App/css/font-awesome.min.css' %}">  
+        <link rel="stylesheet" href="{% static 'AAI_App/css/jplayer.css' %}"> 
+        <link rel="stylesheet" href="{% static 'AAI_App/css/beat.css' %}">         
+        <link rel="stylesheet" href="{% static 'AAI_App/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'AAI_App/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'AAI_App/css/cubeportfolio.min.css' %}">      
+        <link rel="stylesheet" href="{% static 'AAI_App/css/main.css' %}"> 
+        <link rel="stylesheet" href="{% static 'AAI_App/css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'AAI_App/css/custom.css' %}">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->    
+    </head>
+    <body>
+        <header id="navigation">  
+            <div class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{% url 'index' %}"><img class="img-responsive" src="{% static 'AAI_App/aai_images/logos/png/Horizontal_Icon-smaller_wide.png' %}" alt="Horizontal_Icon-smaller_wide.png"></a>
+                    </div>
+                    <nav class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            {% url 'index' as url %}
+                            <li class="nav-item {% if request.path == url %}active{% endif %}">
+                                <a href="{% url 'index' %}">
+                                    HOME
+                                    <div class="equalizer">
+                                        <span class="bar bar-1"></span>
+                                        <span class="bar bar-2"></span>
+                                        <span class="bar bar-3"></span>
+                                        <span class="bar bar-4"></span>
+                                        <span class="bar bar-5"></span>
+                                        <span class="bar bar-6"></span>
+                                        <span class="bar bar-7"></span>
+                                        <span class="bar bar-8"></span>
+                                        <span class="bar bar-9"></span>
+                                        <span class="bar bar-10"></span>
+                                    </div>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">
+                                    T-SHIRTS
+                                    <div class="equalizer">
+                                        <span class="bar bar-1"></span>
+                                        <span class="bar bar-2"></span>
+                                        <span class="bar bar-3"></span>
+                                        <span class="bar bar-4"></span>
+                                        <span class="bar bar-5"></span>
+                                        <span class="bar bar-6"></span>
+                                        <span class="bar bar-7"></span>
+                                        <span class="bar bar-8"></span>
+                                        <span class="bar bar-9"></span>
+                                        <span class="bar bar-10"></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="mailto:artagainstignorance7@gmail.com" class="btn btn-primary">Contact Us</a>
+
+                </div><!-- container -->
+            </div><!-- navbar -->                                
+        </header><!-- header -->
+
+            {% block content %}{% endblock content %}
+
+        <div class="promotion contact"><!--promotion contact section-padding bg-image after-->
+            <div class="promotion-overlay"></div>
+            <div class="promotion-content">
+                <div class="container text-center"><p>Please consider supporting us on <a href="https://artagainstignorance.bandcamp.com/music">Bandcamp</a> or <a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4">Spotify</a></p></div>
+                <ul class="social list-inline">
+                    <li><a href="http://www.facebook.com/artagainstignorance"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/2gOak0LZWTV0VtHjHgk9V4"><i class="fa fa-spotify"></i></a></li>
+                    <li><a href="http://www.instagram.com/artagainstignorance"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCaZk8_S2Z1FxxPcIPnvfwbg"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                <br/>
+            </div>
+        </div>
+        <div class="footer bg-white"><!-- before-after -->
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright 
+                        <script type="text/Javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                    &copy; <a href="{% url 'index' %}">Art Against Ignorance</a></p>
+                </div>  
+                <div class="footer-memu">
+                    <ul>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="https://artagainstignorance.bandcamp.com/merch/art-against-ignorance-t-shirt">T-Shirts</a></li>
+                    </ul>
+                </div><!-- footer-memu -->                      
+            </div><!-- container -->
+        </div><!-- footer before-after bg-white-->
+        <!-- NO JS -->
+        <script>
+            document.documentElement.classList.remove("no-js");
+        </script>
+
+        <!-- JS -->
+        <script src="{% static 'AAI_App/js/jquery.min.js' %}"></script>
+        <script src="{% static 'AAI_App/js/bootstrap.min.js' %}"></script>
+
+        <!-- GOOGLE MAPS -->
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF8h3Hf8yaE3HnE8ndGs2nqq17QQ_huog&callback=initMap"></script>
+
+
+        <!-- ORIGINAL JS -->
+        
+        <script src="{% static 'AAI_App/js/jquery.jplayer.min.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/jplayer.playlist.min.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/jquery.plugin.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/jquery.countdown.js' %}"></script>    
+        <script src="{% static 'AAI_App/js/magnific-popup.min.js' %}"></script>    
+        <script src="{% static 'AAI_App/js/jquery.backstretch.min.js' %}"></script>
+        <script src="{% static 'AAI_App/js/owl.carousel.min.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/inview.min.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/jquery.spinner.min.js' %}"></script> 
+        <script src="{% static 'AAI_App/js/cubeportfolio.min.js' %}"></script>    
+        <script src="{% static 'AAI_App/js/jplayer.source.js' %}"></script>
+        <script src="{% static 'AAI_App/js/main.js' %}"></script>
+
+        <!-- MY JS -->
+        <!--<script src="{% static 'AAI_App/js/myplayer.source.js' %}"></script>-->
+  
+    </body>
+</html>

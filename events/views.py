@@ -6,7 +6,7 @@ from calendar import HTMLCalendar
 from .models import Event
 
 
-def events(request,year=date.today().year, month=date.today().month):
+def index(request,year=date.today().year, month=date.today().month):
     #t = date.today()
     #month = date.strftime(t, '%b')
     #year = t.year

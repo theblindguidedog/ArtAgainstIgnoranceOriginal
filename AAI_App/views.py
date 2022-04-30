@@ -21,8 +21,8 @@ def artist_details_johnno(request):
 def artist_details_ganna(request):
     return render(request, 'AAI_App/artist_details_ganna.html', {})
 
-def artist_details_ganna3(request):
-    return render(request, 'AAI_App/artist_details_ganna3.html', {})
+def artist_details_ganna2(request):
+    return render(request, 'AAI_App/artist_details_ganna2.html', {})
 
 def artist_details_nerdyrodent(request):
     return render(request, 'AAI_App/artist_details_nerdyrodent.html', {})
@@ -42,11 +42,13 @@ def news_details_richard_dawkins(request):
 def news_details_utopians(request):
     return render(request, 'AAI_App/news_details_utopians.html', {})
 
-def critical_thinking(request):
-    return render(request, 'AAI_App/critical-thinking.html', {})
 
-def test(request):
-    return render(request, 'AAI_App/test.html', {})
+
+
+
+
+
+
 
 
 
