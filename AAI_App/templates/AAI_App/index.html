@@ -3,423 +3,426 @@
 {% load static %}
 
 {% block content %}
-
 <div class="section-padding before" id="top"></div>
-        <div class="section-title">
-            <a href="{% url 'index' %}"><h1>HOME</h1></a>
-            <a href="{% url 'index' %}"><h2>Art Against Ignorance</h2></a>
-        </div>
-    
-        <div class="container mystyle">
-            <p> Art Against Ignorance is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience. We are a growing community of creative people collaborating to try and raise awareness, inspire unity and encourage change by harnessing the power of music for the greater good. We artistically explore, question and challenge using words, music and video.
-                <br/><br/>
-                Our goal is to connect with people on an intellectual level via the emotions. We hope to arouse wonder and elevate the conversation with thought provoking concepts brought to life by talented humans from all walks of life all around the world. 
-            </p>
-        </div>
-        <div class="section-title" id="index-artists">
-            <a href="{% url 'index' %}#index-artists"><h1>Artists</h1></a>
-            <a href="{% url 'index' %}#index-artists"><h2>A Global Community</h2></a>
-        </div>
-        <div class="about-content"> <!-- was artists-content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/darceygervaise-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-darceygervaise" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://instagram.com/darceygervaiseproduction?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_darceygervaise' %}">Darcey Gervaise</a>
-                                <h6>Music Producer</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/ganna-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-ganna" src="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" alt="ganna-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://instagram.com/ganna4?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="https://youtube.com/c/Ganna4"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_ganna' %}">Ganna</a>
-                                <h6>Cartoonist</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/blatantblatheist-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-blatantblatheist" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" alt="Blatant Blatheist">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://twitter.com/bblatheist?s=21&t=mOK0UhkdnKAOpsQ08SbTYQ"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://youtube.com/c/BLATANTBLATHEIST"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_blatantblatheist' %}">Blatant Blatheist</a>
-                                <h6>Rap Artist</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/nerdyrodent2-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/nerdyrodent2-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-nerdyrodent" src="{% static 'AAI_App/aai_images/artists/nerdyrodent2-315x475.jpg' %}" alt="nerdyrodent-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://twitter.com/nerdyrodent?s=21&t=mOK0UhkdnKAOpsQ08SbTYQ"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://youtube.com/c/NerdyRodent"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_nerdyrodent' %}">Nerdy Rodent</a>
-                                <h6>Digital Artist</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/zacharygervaise-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/zacharygervaise-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-zacharygervaise" src="{% static 'AAI_App/aai_images/artists/zacharygervaise-315x475.jpg' %}" alt="zacharygervaise-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://instagram.com/zachgervaise?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_zacharygervaise' %}">Zach Gervaise</a>
-                                <h6>Writer</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/briangervaise-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-briangervaise" src="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" alt="briangervaise-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://twitter.com/HumanistMuso66"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCH5PLEWjWCVPCmdSwrtvrYg"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_briangervaise' %}">Brian Gervaise</a>
-                                <h6>Concept Development</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/wally-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/wally-315x475.jpg' %}" type="image/jpeg">
-                                <img  class="img-responsive" id="index-zoltanjohn" src="{% static 'AAI_App/aai_images/artists/wally-315x475.jpg' %}" alt="wally-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <ul class="list-inline">
-                                    <li><a href="https://youtube.com/user/walmusz"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
-                                <a href="{% url 'artist_details_wally' %}">Zoltan John</a>
-                                <h6>Musician</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="artists">
-                            <div class="artists-overlay"></div>
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/artists/webp/johnno-315x475.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" type="image/jpeg">
-                                <img class="img-responsive" id="index-johnnodean" src="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" alt="johnno-315x475.jpg">
-                            </picture>
-                            <div class="artists-info">
-                                <!-- Socials were here -->
-                                <a href="{% url 'artist_details_johnno' %}">Johnno Dean</a>
-                                <h6>Vocalist</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- about content -->
-    </div><!-- about section -->
-
-    <br/><br/><br/>
-
-    <div class="gallery-section"><!--gallery-block was in this div-->
+<div class="section-title">
+    <a href="{% url 'index' %}"><h1>HOME</h1></a>
+    <a href="{% url 'index' %}"><h2>Art Against Ignorance</h2></a>
+</div>   
+<div class="container mystyle">
+    <p> Art Against Ignorance is a global artistic movement started in Australia by a family of songwriters and music producers with a conscience. We are a growing community of creative people collaborating to try and raise awareness, inspire unity and encourage change by harnessing the power of music for the greater good. We artistically explore, question and challenge using words, music and video.
+        <br/><br/>
+        Our goal is to connect with people on an intellectual level via the emotions. We hope to arouse wonder and elevate the conversation with thought provoking concepts brought to life by talented humans from all walks of life all around the world. 
+    </p>
+</div>
+<div class="section-title" id="index-artists">
+    <a href="{% url 'index' %}#index-artists"><h1>Artists</h1></a>
+    <a href="{% url 'index' %}#index-artists"><h2>A Global Community</h2></a>
+</div>
+    <div class="about-content"> <!-- was artists-content -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="video-gallery">
-                        <div class="section-title">
-                            <h1>Videos</h1>
-                            <h2>Concepts</h2>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/darceygervaise-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-darceygervaise" src="{% static 'AAI_App/aai_images/artists/darceygervaise-315x475.jpg' %}" alt="darceygervaise-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://instagram.com/darceygervaiseproduction?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_darceygervaise' %}">Darcey Gervaise</a>
+                            <h6>Music Producer</h6>
                         </div>
-                        <br/><br/>                           
-                        <div class="gallery-tab">
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="one">
-                                    <div class="video-content">
-                                        <div class="video-overlay"></div>
-                                        <picture>
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/webp/dear_mother_nature-661x382.webp' %}" type="image/webp">
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/dear_mother_nature-661x382.png' %}" type="image/png">
-                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/dear_mother_nature-661x382.png' %}" alt="dear_mother_nature-661x382.png">
-                                        </picture>  
-                                        <div class="video video-icons text-center">
-                                            <a class="video-link" href="https://www.youtube.com/watch?v=y9ID8Lrlm2U"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
-                                        </div>                                
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="two">
-                                    <div class="video-content">
-                                        <div class="video-overlay"></div>
-                                        <picture>
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/wiyw-661x382.webp' %}" type="image/webp">
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/wiyw-661x382.png' %}" type="image/png">
-                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-661x382.png' %}" alt="wiyw-661x382.png">
-                                        </picture> 
-                                        
-                                        <div class="video video-icons text-center">
-                                            <a class="video-link" href="https://www.youtube.com/watch?v=k6ExxvIfMeQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="1.png"></a>
-                                        </div>                                
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="three">
-                                    <div class="video-content">
-                                        <div class="video-overlay"></div>
-                                        <picture>
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/I-cant-lie-to-myself-661x382.webp' %}" type="image/webp">
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" type="image/png">
-                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" alt="I-cant-lie-to-myself-661x382.png">
-                                        </picture>   
-                                        <div class="video video-icons text-center">
-                                            <a class="video-link" href="https://www.youtube.com/watch?v=sFUB0niLaWQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
-                                        </div>                                
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="four">
-                                    <div class="video-content">
-                                        <div class="video-overlay"></div>
-                                        <picture>
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/say-no-661x382.webp' %}" type="image/webp">
-                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/say-no-661x382.jpg' %}" type="image/jpeg">
-                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-661x382.jpg' %}" alt="say-no-661x382.jpg">
-                                        </picture>
-                                        <div class="video video-icons text-center">
-                                            <a class="video-link" href="https://www.youtube.com/watch?v=VJcncuZnwA8"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
-                                        </div>                                
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">
-                                    <div class="tab-image">
-                                        <div class="gallery-image">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/dear_mother_nature-115x109.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/dear_mother_nature-115x109.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/dear_mother_nature-115x109.png' %}" alt="dear_mother_nature-115x109.png">
-                                            </picture>
-                                            <div class="image-overlay">
-                                                <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
-                                            </div>     
-                                        </div>
-                                        <h5>Dear Mother Nature <span>2022</span></h5>
-                                    </div>
-                                </a></li>
-                                <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab">
-                                    <div class="tab-image">
-                                        <div class="gallery-image">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/wiyw-115x109.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/wiyw-115x109.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-115x109.png' %}" alt="wiyw-115x109.png">
-                                            </picture>
-                                            <div class="image-overlay">
-                                                <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
-                                            </div>     
-                                        </div>
-                                        <h5>What if You're Wrong <span>2021</span></h5>
-                                    </div>
-                                </a></li>
-                                <li role="presentation"><a href="#three" aria-controls="three" role="tab" data-toggle="tab">
-                                    <div class="tab-image">
-                                        <div class="gallery-image">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/I-cant-lie-to-myself-115x109.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" alt="I-cant-lie-to-myself-115x109.png">
-                                            </picture>
-                                            <div class="image-overlay">
-                                                <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
-                                            </div>     
-                                        </div>
-                                        <h5>I can't Lie to Myself <span>2021</span></h5>
-                                    </div>
-                                </a></li>
-                                <li role="presentation"><a href="#four" aria-controls="four" role="tab" data-toggle="tab">
-                                    <div class="tab-image">
-                                        <div class="gallery-image">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/say-no-115x109.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/say-no-115x109.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-115x109.png' %}" alt="say-no-115x109.png">
-                                            </picture>
-                                            <div class="image-overlay">
-                                                <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
-                                            </div>     
-                                        </div>    
-                                        <h5>Life Amazing<span>2021</span></h5>
-                                    </div>
-                                </a></li>
-                            </ul>    
-                        </div> <!-- gallery tab --> 
                     </div>
                 </div>
-                <div class="col-sm-6">                       
-                    <div class="festival-schedule live-shows" id="news">
-                        <div class="section-title">
-                            <h1>News</h1>
-                            <h2>Updates</h2>
-                        </div>
-                        <br/><br/>
-                        <div class="tab-content">
-                            <ul>
-                                <li class="festival-info">
-                                    <div class="festival-image img-rounded">
-                                        <!-- pageparts/index/image-overlay.html was here -->
-                                        <a href="{% url 'news_details_aron_ra' %}">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/news/webp/aron_ra-150x183.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/news/aron_ra-150x183.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/aron_ra-150x183.png' %}" alt="aron_ra-150x183.png">
-                                            </picture>
-                                        </a>
-                                    <!-- pageparts/news/time.html was here -->                                        
-                                    </div>
-                                    <div class="text-left">
-                                        <a href="{% url 'news_details_aron_ra' %}"><h2>Aron Ra To Star</h2></a>
-                                    </div>
-                                </li>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/ganna-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-ganna" src="{% static 'AAI_App/aai_images/artists/ganna-315x475.jpg' %}" alt="ganna-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://instagram.com/ganna4?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://youtube.com/c/Ganna4"><i class="fa fa-youtube"></i></a></li>
                             </ul>
-                        </div><!-- tab-content -->
-                        <div class="tab-content">
-                            <ul>
-                                <li class="festival-info">
-                                    <div class="festival-image img-rounded">
-                                        <!-- pageparts/index/image-overlay.html was here -->
-                                        <a href="{% url 'news_details_lawrence_krauss' %}">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/news/webp/lawrence_krauss-150x183.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/news/lawrence_krauss-150x183.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/lawrence_krauss-150x183.png' %}" alt="lawrence_krauss-150x183.png">
-                                            </picture>
-                                        </a>
-                                    <!-- pageparts/news/time.html was here -->                                        
-                                    </div>
-                                    <div class="text-left">
-                                        <a href="{% url 'news_details_lawrence_krauss' %}"><h2>Lawrence Krauss</h2></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div><!-- tab-content -->
-                        <div class="tab-content">
-                            <ul>
-                                <li class="festival-info">
-                                    <div class="festival-image img-rounded">
-                                        <!-- pageparts/index/image-overlay.html was here -->
-                                        <a href="{% url 'news_details_richard_dawkins' %}">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/news/webp/richard_dawkins-150x183.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/news/richard_dawkins-150x183.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/richard_dawkins-150x183.png' %}" alt="richard_dawkins-150x183.png">
-                                            </picture>
-                                        </a>
-                                        <!-- pageparts/news/time.html was here -->                                                 
-                                    </div>
-                                    <div class="text-left">
-                                        <a href="{% url 'news_details_richard_dawkins' %}"><h2>Richard Dawkins</h2></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div><!-- tab-content -->
-                        <div class="tab-content">
-                            <ul>
-                                <li class="festival-info">
-                                    <div class="festival-image img-rounded">
-                                        <!-- pageparts/index/image-overlay.html was here -->
-                                        <a href="{% url 'news_details_utopians' %}">
-                                            <picture>
-                                                <source srcset="{% static 'AAI_App/aai_images/news/webp/utopians-150x183.webp' %}" type="image/webp">
-                                                <source srcset="{% static 'AAI_App/aai_images/news/utopians-150x183.png' %}" type="image/png">
-                                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/utopians-150x183.png' %}" alt="utopians-150x183.png">
-                                            </picture>
-                                        </a>
-                                    <!-- pageparts/news/time.html was here -->                                        
-                                    </div>
-                                    <div class="text-left">
-                                        <a href="{% url 'news_details_utopians' %}"><h2>Critical Thinking</h2></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div><!-- tab-content -->
-                    </div><!-- festival-schedule -->
-                </div><!-- col-sm-6 -->
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- gallery section -->
-    <br/><br/><br/>
-    <div class="section-title" id="index_music">
-        <h1>Music</h1>
-        <h2>Catalogue</h2>
-    </div>
-    <div class="audio-album">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-content">
-                        <div class="album-image img-rounded"> <!-- album-image css is in responsive.css -->
-                            <picture>
-                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/webp/Triangle-270x310.webp' %}" type="image/webp">
-                                <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" type="image/jpeg">
-                                <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" alt="Triangle-270x310.jpg">
-                            </picture>
+                            <a href="{% url 'artist_details_ganna' %}">Ganna</a>
+                            <h6>Cartoonist</h6>
                         </div>
                     </div>
-                    <!-- form.html was here -->                                                  
-                </div>           
-                <div class="col-sm-9">
-                    <div id="jp-container">
-                        <div id="jplayer"></div>
-                        <div class="jp-content">
-                            <div id="playing"></div>
-                                <ul class="jp-controls"><!-- this controls the little play button including bg-image -->
-                                    <li><a href="javascript:;" class="jp-play" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/3.png' %}" alt="Image"></a></li>
-                                    <li><a href="javascript:;" class="jp-pause" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/5.png' %}" alt="Image"></a></li>
-                                </ul> 
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/blatantblatheist-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-blatantblatheist" src="{% static 'AAI_App/aai_images/artists/blatantblatheist-315x475.jpg' %}" alt="Blatant Blatheist">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://twitter.com/bblatheist?s=21&t=mOK0UhkdnKAOpsQ08SbTYQ"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://youtube.com/c/BLATANTBLATHEIST"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_blatantblatheist' %}">Blatant Blatheist</a>
+                            <h6>Rap Artist</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/nerdyrodent2-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/nerdyrodent2-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-nerdyrodent" src="{% static 'AAI_App/aai_images/artists/nerdyrodent2-315x475.jpg' %}" alt="nerdyrodent-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://twitter.com/nerdyrodent?s=21&t=mOK0UhkdnKAOpsQ08SbTYQ"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://youtube.com/c/NerdyRodent"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_nerdyrodent' %}">Nerdy Rodent</a>
+                            <h6>Digital Artist</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/zacharygervaise-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/zacharygervaise-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-zacharygervaise" src="{% static 'AAI_App/aai_images/artists/zacharygervaise-315x475.jpg' %}" alt="zacharygervaise-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://instagram.com/zachgervaise?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_zacharygervaise' %}">Zach Gervaise</a>
+                            <h6>Writer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/briangervaise-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-briangervaise" src="{% static 'AAI_App/aai_images/artists/briangervaise-315x475.jpg' %}" alt="briangervaise-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://twitter.com/HumanistMuso66"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCH5PLEWjWCVPCmdSwrtvrYg"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_briangervaise' %}">Brian Gervaise</a>
+                            <h6>Concept Development</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/wally-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/wally-315x475.jpg' %}" type="image/jpeg">
+                            <img  class="img-responsive" id="index-zoltanjohn" src="{% static 'AAI_App/aai_images/artists/wally-315x475.jpg' %}" alt="wally-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <ul class="list-inline">
+                                <li><a href="https://youtube.com/user/walmusz"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            <a href="{% url 'artist_details_wally' %}">Zoltan John</a>
+                            <h6>Musician</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="artists">
+                        <div class="artists-overlay"></div>
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/artists/webp/johnno-315x475.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" id="index-johnnodean" src="{% static 'AAI_App/aai_images/artists/johnno-315x475.jpg' %}" alt="johnno-315x475.jpg">
+                        </picture>
+                        <div class="artists-info">
+                            <!-- Socials were here -->
+                            <a href="{% url 'artist_details_johnno' %}">Johnno Dean</a>
+                            <h6>Vocalist</h6>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- about content -->
+</div><!-- about section -->
+<br/><br/><br/>
+<div class="gallery-section"><!--gallery-block was in this div-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="video-gallery">
+                    <div class="section-title">
+                        <h1>Videos</h1>
+                        <h2>Concepts</h2>
+                    </div>
+                    <br/><br/>                           
+                    <div class="gallery-tab">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="one">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <picture>
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/webp/dear_mother_nature-661x382.webp' %}" type="image/webp">
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/dear_mother_nature-661x382.png' %}" type="image/png">
+                                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/dear_mother_nature-661x382.png' %}" alt="dear_mother_nature-661x382.png">
+                                    </picture>  
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=y9ID8Lrlm2U"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="two">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <picture>
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/wiyw-661x382.webp' %}" type="image/webp">
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/wiyw-661x382.png' %}" type="image/png">
+                                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-661x382.png' %}" alt="wiyw-661x382.png">
+                                    </picture> 
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=k6ExxvIfMeQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="1.png"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="three">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <picture>
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/I-cant-lie-to-myself-661x382.webp' %}" type="image/webp">
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" type="image/png">
+                                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-661x382.png' %}" alt="I-cant-lie-to-myself-661x382.png">
+                                    </picture>   
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=sFUB0niLaWQ"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="four">
+                                <div class="video-content">
+                                    <div class="video-overlay"></div>
+                                    <picture>
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/say-no-661x382.webp' %}" type="image/webp">
+                                        <source srcset="{% static 'AAI_App/aai_images/thumbnail/say-no-661x382.jpg' %}" type="image/jpeg">
+                                        <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-661x382.jpg' %}" alt="say-no-661x382.jpg">
+                                    </picture>
+                                    <div class="video video-icons text-center">
+                                        <a class="video-link" href="https://www.youtube.com/watch?v=VJcncuZnwA8"><img class="img-responsive" src="{% static 'AAI_App/images/player/1.png' %}" alt="Image"></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#one" aria-controls="one" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/dear_mother_nature-115x109.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/dear_mother_nature-115x109.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/dear_mother_nature-115x109.png' %}" alt="dear_mother_nature-115x109.png">
+                                        </picture>
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>Dear Mother Nature <span>2022</span></h5>
+                                </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#two" aria-controls="two" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/wiyw-115x109.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/wiyw-115x109.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/wiyw-115x109.png' %}" alt="wiyw-115x109.png">
+                                        </picture>
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>What if You're Wrong <span>2021</span></h5>
+                                </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#three" aria-controls="three" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/I-cant-lie-to-myself-115x109.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/I-cant-lie-to-myself-115x109.png' %}" alt="I-cant-lie-to-myself-115x109.png">
+                                        </picture>
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>
+                                    <h5>I can't Lie to Myself <span>2021</span></h5>
+                                </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#four" aria-controls="four" role="tab" data-toggle="tab">
+                                <div class="tab-image">
+                                    <div class="gallery-image">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/webp/say-no-115x109.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/say-no-115x109.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/say-no-115x109.png' %}" alt="say-no-115x109.png">
+                                        </picture>
+                                        <div class="image-overlay">
+                                            <img class="img-responsive" src="{% static 'AAI_App/images/player/2.png' %}" alt="Image">
+                                        </div>     
+                                    </div>    
+                                    <h5>Life Amazing<span>2021</span></h5>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>    
+                    </div> <!-- gallery tab --> 
+                </div>
+            </div>
+            <div class="col-sm-6">                       
+                <div class="festival-schedule live-shows" id="news">
+                    <div class="section-title">
+                        <h1>News</h1>
+                        <h2>Updates</h2>
+                    </div>
+                    <br/><br/>
+                    <div class="tab-content">
+                        <ul>
+                            <li class="festival-info">
+                                <div class="festival-image img-rounded">
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_aron_ra' %}">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/news/webp/aron_ra-150x183.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/news/aron_ra-150x183.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/aron_ra-150x183.png' %}" alt="aron_ra-150x183.png">
+                                        </picture>
+                                    </a>
+                                <!-- pageparts/news/time.html was here -->                                        
+                                </div>
+                                <div class="text-left">
+                                    <a href="{% url 'news_details_aron_ra' %}"><h2>Aron Ra To Star</h2></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- tab-content -->
+                    <div class="tab-content">
+                        <ul>
+                            <li class="festival-info">
+                                <div class="festival-image img-rounded">
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_lawrence_krauss' %}">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/news/webp/lawrence_krauss-150x183.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/news/lawrence_krauss-150x183.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/lawrence_krauss-150x183.png' %}" alt="lawrence_krauss-150x183.png">
+                                        </picture>
+                                    </a>
+                                <!-- pageparts/news/time.html was here -->                                        
+                                </div>
+                                <div class="text-left">
+                                    <a href="{% url 'news_details_lawrence_krauss' %}"><h2>Lawrence Krauss</h2></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- tab-content -->
+                    <div class="tab-content">
+                        <ul>
+                            <li class="festival-info">
+                                <div class="festival-image img-rounded">
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_richard_dawkins' %}">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/news/webp/richard_dawkins-150x183.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/news/richard_dawkins-150x183.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/richard_dawkins-150x183.png' %}" alt="richard_dawkins-150x183.png">
+                                        </picture>
+                                    </a>
+                                    <!-- pageparts/news/time.html was here -->                                                 
+                                </div>
+                                <div class="text-left">
+                                    <a href="{% url 'news_details_richard_dawkins' %}"><h2>Richard Dawkins</h2></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- tab-content -->
+                    <div class="tab-content">
+                        <ul>
+                            <li class="festival-info">
+                                <div class="festival-image img-rounded">
+                                    <!-- pageparts/index/image-overlay.html was here -->
+                                    <a href="{% url 'news_details_utopians' %}">
+                                        <picture>
+                                            <source srcset="{% static 'AAI_App/aai_images/news/webp/utopians-150x183.webp' %}" type="image/webp">
+                                            <source srcset="{% static 'AAI_App/aai_images/news/utopians-150x183.png' %}" type="image/png">
+                                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/utopians-150x183.png' %}" alt="utopians-150x183.png">
+                                        </picture>
+                                    </a>
+                                <!-- pageparts/news/time.html was here -->                                        
+                                </div>
+                                <div class="text-left">
+                                    <a href="{% url 'news_details_utopians' %}"><h2>Critical Thinking</h2></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- tab-content -->
+                </div><!-- festival-schedule -->
+            </div><!-- col-sm-6 -->
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- gallery section -->
+<br/><br/><br/>
+<div class="section-title" id="index_music">
+    <h1>Music</h1>
+    <h2>Catalogue</h2>
+</div>
+<div class="audio-album">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-content">
+                    <div class="album-image img-rounded"> <!-- album-image css is in responsive.css -->
+                        <picture>
+                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/webp/Triangle-270x310.webp' %}" type="image/webp">
+                            <source srcset="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" type="image/jpeg">
+                            <img class="img-responsive" src="{% static 'AAI_App/aai_images/thumbnail/music/Triangle-270x310.jpg' %}" alt="Triangle-270x310.jpg">
+                        </picture>
+                    </div>
+                </div>
+                <!-- form.html was here -->                                                  
+            </div>           
+            <div class="col-sm-9">
+                <div id="jp-container">
+                    <div id="jplayer"></div>
+                    <div class="jp-content">
+                        <div id="playing"></div>
+                            <ul class="jp-controls"><!-- this controls the little play button including bg-image -->
+                                <li><a href="javascript:;" class="jp-play" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/3.png' %}" alt="Image"></a></li>
+                                <li><a href="javascript:;" class="jp-pause" tabindex="1"><img  class="img-responsive" src="{% static 'AAI_App/images/player/5.png' %}" alt="Image"></a></li>
+                            </ul> 
                             <div class="jp-interface">
                                 <div class="jp-progress">
                                     <div class="jp-seek-bar">
@@ -446,7 +449,4 @@
         </div><!-- container -->
     </div><!-- audio-album -->
 <div class="section-padding"></div>
-
-
-
 {% endblock content %}

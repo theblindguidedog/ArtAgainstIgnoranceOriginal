@@ -1,12 +1,6 @@
 /* MY CSS */
 
-    .grey-background {
-        background-image:
-    url("../aai_images/slider/grey-background.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    /* MY ID'S */
 
     #my-container {
         background-color: #FFFFFF;/*#E0E0E0*/
@@ -28,6 +22,8 @@
     }
 
 
+    /* MY CLASSES */
+
     .support-us {
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-size: inherit;
@@ -36,28 +32,17 @@
         padding-bottom:50px;
     }
 
-
-    .hr-dark {
-        margin: auto;
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0)
-        );
+    .grey-background {
+        background-image:
+    url("../aai_images/slider/grey-background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
-
-    .no-web .body-base {
-        background-image: url(../aai_images/bg/2.jpg);
-        z-index: 1;    
-    }
-
-    .webp .body-base {
-        background-image: url(../aai_images/bg/webp/2.webp);
-        z-index:1;    
+    .footer {
+        position: absolute;
+        width: 100%;
     }
 
     .mystyle {
@@ -71,15 +56,6 @@
         padding-bottom: 20px;
     }
 
-    .noHover{
-        pointer-events: none;
-    }
-
-    .footer {
-        position: absolute;
-        width: 100%;
-    }
-
     .logos {
         max-height: 100%;
         max-width:100%;
@@ -90,24 +66,24 @@
         font-size: initial;
     }
 
-    .entry-summary {
-        font-size: 18px;
-        line-height: 24px;
-        margin-top: 55px;
-        font-family: 'aller_lightregular';
-        max-width: 1085px;
+    .noHover{
+        pointer-events: none;
     }
 
-    .entry-summary::first-letter {
-        font-size: 46px;
-        text-transform: uppercase;
-    }
-
-    .entry-summary p { 
-        margin-bottom: 25px;
-    }
 
     /* TEST CSS */
+
+    .hr-dark {
+        margin: auto;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+        );
+    }
 
     .rotate45 {
         transform: rotate(45deg); 
@@ -151,4 +127,17 @@
         width: 200px;
         height: 150px;
     }
+
+
+    /* DON'T KNOW WHAT THESE ARE
+    .no-web .body-base {
+        background-image: url(../aai_images/bg/2.jpg);
+        z-index: 1;    
+    }
+
+    .webp .body-base {
+        background-image: url(../aai_images/bg/webp/2.webp);
+        z-index:1;    
+    }
+    */
 
