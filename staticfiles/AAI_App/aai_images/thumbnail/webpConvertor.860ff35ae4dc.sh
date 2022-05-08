@@ -17,20 +17,10 @@ jpg () {
 			echo -e "Converting ${file}.jpg to ${file}.webp now ...... \c "
 			cwebp -q 50 "${file}.jpg" -o "${file}.webp";
 			echo -e "Done \n"
-			echo -e "If you would you like to move ${file}.webp to the directory webp/ please type y :\nOtherwise type n \c"
-			read response
-			if [ $response = "y" ]
-			then
-				mv ${file}.webp webp/
-				echo -e "${file}.webp was successfully moved to webp/"
-				exit
-			elif [ $response = "n" ]
-			then
-				echo -e "Exiting Now... \n"
-				continue
-			else
-				exit
-			fi
+			mv ${file}.webp webp/
+			echo -e "${file}.webp was successfully moved to webp/"
+			exit
+
 		elif [[ $response = "n" ]]
 		then
 			continue
@@ -46,7 +36,6 @@ png () {
 
 	while true
 	do
-
 		echo -e "Enter name of file without file extension \c";
 
 		read file
@@ -59,27 +48,15 @@ png () {
 			echo -e "Converting ${file}.png to ${file}.webp now ...... \c "
 			cwebp -q 50 -exact "${file}.png" -o "${file}.webp";
 			echo -e "Done \n"
-			echo -e "If you would you like to move ${file}.webp to the directory webp/\nplease type y :\nOtherwise type n : \c"
-			read response
-			if [ $response = "y" ]
-			then
-				mv ${file}.webp webp/
-				echo -e "${file}.webp was successfully moved to webp/"
-				exit
-			elif [ $response = "n" ]
-			then
-				echo -e "Exiting Now... \n"
-				continue
-			else
-				exit
-			fi
+			mv ${file}.webp webp/
+			echo -e "${file}.webp was successfully moved to webp/"
+			exit
 		elif [[ $response = "n" ]]
 		then
 			continue
 		else
 			exit
 		fi
-
 	done
 
 }
@@ -98,20 +75,15 @@ all () {
 				cwebp -q 50 -exact "$file" -o "${file%.*}.webp"
 			done
 			echo -e "Done \n"
-			echo -e "If you would you like to move all .webp files to the directory webp/\nplease type y :\nOtherwise type n : \c"
-				read response
-				if [ $response = "y" ]
-				then
-					mv *.webp webp/
-					echo -e "All .webp files were successfully moved to webp/"
-					exit
-				elif [ $response = "n" ]
-				then
-					echo -e "Exiting Now... \n"
-					continue
-				else
-					exit
-				fi
+			mv *.webp webp/
+			echo -e "All .webp files were successfully moved to webp/"
+			exit
+		elif [ $response = "n" ]
+		then
+			echo -e "Exiting Now... \n"
+			continue
+		else
+			exit
 		fi
 	done
 }
