@@ -104,7 +104,7 @@ $(document).ready(function(){
         },
         {
             category: "RELIGION", // the category name
-            title:"<span>02.</span> I Can't Lie", // track title
+            title:"<span>02.</span> I Can't Lie To Myself", // track title
             mp3:"static/AAI_App/audio/mp3/I_can-t_lie.mp3",// m4a path
             oga:"",// oga path
             duration: '2:53'// duration time in playlist

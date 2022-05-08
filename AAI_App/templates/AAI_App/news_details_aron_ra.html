@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block news %}
+{% block content %}
 
  
         <div class="container" style="background-color:white;padding-top:70px;">
@@ -14,28 +14,48 @@
                         <img class="img-responsive" src="{% static 'AAI_App/aai_images/news/aron_ra-1624x750.png' %}" alt="aron_ra-1624x750.png">
                     </picture>
                 </div>             
-                <div class="post-content">
+                <div class="news-content"> <!-- custom.css -->
                     <!-- pageparts/news/time.html was here -->
-                    <div class="entry-title bottom">
+                    <div class="news-title bottom"> <!-- custom.css -->
                         <h1>Aron Ra to Star in Music Video</h1>
                     </div> 
                     <!-- pageparts/news/author.html was here -->
                 </div>
             </div><!-- entry-post -->
-            <div id="my-container">
-                <div id="my-wrapper">
-                    <section id="my-main">
+            <div id="my-container"> <!-- custom.css -->
+                <div id="my-wrapper"> <!-- custom.css -->
+                    <section id="my-main"> <!-- custom.css -->
                         <p>Atheist activist and content creator <a href="https://www.youtube.com/c/AronRa">Aron Ra</a> will feature in our next music video release 'I know you I know'. The concept symbolises how racism and xenophobia are born out of ignorance. </p>
                         <p>We greatly appreciate Aron being able to find the time to film his parts for the video and realise through communicating and working with him how busy his schedule is and the amount of travel he does. Updates on music video progress will appear here on our website.</p> 
                         <p>Early access is available by supporting us on <a href="https://www.patreon.com/artagainstignorance">Patreon</a></p>
                     </section>
-                    <div class="row text-center section-padding">
+                    <div class="row text-center">
                         <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="{% url 'news_details_utopians' %}" aria-label="Previous">
+                                    <span aria-hidden="true">&#8249;</span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="{% url 'news_details_aron_ra' %}">1</a></li>
+                                <li><a href="{% url 'news_details_lawrence_krauss' %}">2</a></li>
+                                <li><a href="{% url 'news_details_richard_dawkins' %}">3</a></li>
+                                <li><a href="{% url 'news_details_utopians' %}">4</a></li>
+                                <li>
+                                    <a href="{% url 'news_details_lawrence_krauss' %}" aria-label="Next">
+                                    <span aria-hidden="true">&#8250;</span>
+                                    <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <br/><br/><br/>
                             <ul>
                                 <li><a href="{% url 'index' %}#news"  class="btn btn-info">Back</a></li>
                             </ul> 
-                        </nav>
-                    </div><!-- row -->
+                        </nav>                     
+                    </div>
+                    <br/><br/><br/>
                 </div><!-- my-wrapper -->
             </div><!-- my-container-->
         </div><!-- container -->
@@ -43,4 +63,4 @@
          
 
 
-{% endblock news %}
+{% endblock content %}

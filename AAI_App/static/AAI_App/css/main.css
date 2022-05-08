@@ -151,9 +151,8 @@ a:focus, button:focus, .btn:focus,
 
 .section-title h2,
 .page-title h2 {
-    font-size: 48px;
+    font-size: 40px; /* was 48px though it seems to make no difference */
     color: #000;
-    margin: 0;
     font-family: 'aller_displayregular';
 }
 
@@ -3410,7 +3409,7 @@ textarea.form-control {
     overflow: hidden;
     text-align: center;
     border: 2px solid rgba(0, 0, 0);
-    padding:5px 5px 5px 5px;
+    padding:7px 7px 7px 7px;
 }
 
 .album-overlay {
