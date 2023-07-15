@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 def index(request):
     return render(request, 'AAI_App/index.html', {})
 
-def artist_details_briangervaise(request):
-    return render(request, 'AAI_App/artist_details_briangervaise.html', {})
+def artist_details_artgervaise(request):
+    return render(request, 'AAI_App/artist_details_artgervaise.html', {})
 
 def artist_details_zacharygervaise(request):
     return render(request, 'AAI_App/artist_details_zacharygervaise.html', {})
@@ -15,8 +15,8 @@ def artist_details_darceygervaise(request):
 def artist_details_wally(request):
     return render(request, 'AAI_App/artist_details_wally.html', {})
 
-def artist_details_johnno(request):
-    return render(request, 'AAI_App/artist_details_johnno.html', {})
+def artist_website_madam_who(request):
+    return redirect('https://madamwho.com/the-skinny', {})
 
 def artist_details_ganna(request):
     return render(request, 'AAI_App/artist_details_ganna.html', {})
