@@ -144,7 +144,7 @@ a:focus, button:focus, .btn:focus,
 
 .section-title h1,
 .page-title h1 {
-    font-size: 24px;
+    font-size: 12px;
     letter-spacing: 14px;
     color: #ed145b;
     font-family: 'allerbold';
@@ -224,7 +224,7 @@ a:focus, button:focus, .btn:focus,
 
 .breadcrumb {
     z-index: 1;
-    background-image: url(../aai_images/bg/twitter_background.jpg); /* was bg/7.jpg */
+    background-image: url("../aai_images/bg/twitter_background.02e01245f830.jpg"); /* was bg/7.jpg */
     background-color: transparent;
     position: relative;
     margin-bottom: 0;
@@ -471,17 +471,17 @@ ul.sub-menu {
 /* About Section */
 
 .no-webp .about-section.about {
-    background-image: url(../aai_images/bg/2.jpg);
+    background-image: url("../aai_images/bg/2.24d87f8fd532.jpg");
     background-color: #e7eced;
 }
 
 .webp .about-section.about {
-    background-image: url(../aai_images/bg/webp/2.webp);
+    background-image: url("../aai_images/bg/webp/2.7c99e64601f9.webp");
 }
 
 .no-webp .about-section.about.before-after:before, 
 .no-webp .about-section.about.before-after:after {
-	background-image: url(../aai_images/bg/2.jpg);	
+	background-image: url("../aai_images/bg/2.24d87f8fd532.jpg");	
 	height: 30px;
 	border: 0;
 	top: -29px;
@@ -489,7 +489,7 @@ ul.sub-menu {
 
 .webp .about-section.about.before-after:before, 
 .webp .about-section.about.before-after:after {
-    background-image: url(../aai_images/bg/webp/2.webp)
+    background-image: url("../aai_images/bg/webp/2.7c99e64601f9.webp")
 }
 
 .about-section.about.before-after:before {	
@@ -723,7 +723,7 @@ ul.sub-menu {
 /* Gallery Section */
 
 .gallery-section {
-    /*background-image: url(../images/bg/3.jpg);*/
+    /*background-image: url("../images/bg/3.b47b4bc764b8.jpg");*/
     background-color: transparent;/*#e7eced*/
     padding-bottom: 10px;/*100px*/
 }
@@ -957,19 +957,19 @@ ul.sub-menu {
 }
 
 .video-content.video .jp-playlist ul li:nth-child(1) .jp-playlist-item{
-    background-image:url(../images/gallery/21.jpg)   
+    background-image:url("../images/gallery/21.5f4e4cc65916.jpg")   
 }
 
 .video-content.video .jp-playlist ul li:nth-child(2) .jp-playlist-item{
-    background-image:url(../images/gallery/22.jpg)   
+    background-image:url("../images/gallery/22.5f4e4cc65916.jpg")   
 }
 
 .video-content.video .jp-playlist ul li:nth-child(3) .jp-playlist-item{
-    background-image:url(../images/gallery/23.jpg)   
+    background-image:url("../images/gallery/23.5f4e4cc65916.jpg")   
 }
 
 .video-content.video .jp-playlist ul li:nth-child(4) .jp-playlist-item{
-    background-image:url(../images/gallery/24.jpg)   
+    background-image:url("../images/gallery/24.5f4e4cc65916.jpg")   
 }
 
 .photo-galery .photo {
@@ -1188,7 +1188,7 @@ ul.sub-menu {
     color: #fff;
     line-height: 32px;
     position: relative;
-    background-image: url(../aai_images/bg/musical_notes_overlay.png); /* was bg/11.jpg */
+    background-image: url("../aai_images/bg/musical_notes_overlay.e3bfc9a4b260.png"); /* was bg/11.jpg */
     z-index: 1;
 }
 
@@ -1224,7 +1224,7 @@ ul.sub-menu {
 
 .shop-section {
     text-align: center;
-    background-image: url(../images/bg/3.jpg);
+    background-image: url("../images/bg/3.b47b4bc764b8.jpg");
     background-color: #e7eced;
 }
 
@@ -2082,7 +2082,7 @@ textarea.form-control {
 
 .contact-section.contact.before-after:before, 
 .contact-section.contact.before-after:after {
-    background-image: url(../images/bg/map-bg.jpg); 
+    background-image: url("../images/bg/map-bg.a0e7fa6c77d9.jpg"); 
     height: 30px;
     border: 0;
     top: -29px;
@@ -2148,7 +2148,7 @@ textarea.form-control {
 
 .promotion {
     text-align: center;
-    background-image: url(../images/bg/5.jpg);
+    background-image: url("../images/bg/5.ce4f5d2ce7a7.jpg");
     background-color: #802b43;
 }
 
@@ -2660,7 +2660,7 @@ textarea.form-control {
 
 .life-career,
 .earnings {
-    background-image: url(../images/bg/3.jpg);
+    background-image: url("../images/bg/3.b47b4bc764b8.jpg");
     background-color: #e7eced;
 }
 
@@ -2795,7 +2795,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/sponsors-overlay.png);
+    background-image: url("../images/sponsors-overlay.e3bfc9a4b260.png");
     z-index: -1;
     background-position: center center;
 }
@@ -2967,7 +2967,7 @@ textarea.form-control {
     margin-right: 20px;
     padding-left: 20px;
     padding-right: 15px;
-    background-image: url(../images/bg/8.jpg);
+    background-image: url("../images/bg/8.36a6399fc54a.jpg");
     position: relative;
     z-index: 1;
 }
@@ -3205,7 +3205,7 @@ textarea.form-control {
 
 .video-content.video-icons .jp-playlist ul li a:before {
     content: "";
-    background-image: url(../images/player/2.png);
+    background-image: url("../images/player/2.abcb1331f052.png");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -3269,7 +3269,7 @@ textarea.form-control {
 }
 
 #jplayer-container .jp-controls {
-    background-image: url(../images/player/3.jpg);
+    background-image: url("../images/player/3.9da5492b469a.jpg");
     width:110px;
     height: 110px;
     text-align: center;
@@ -3398,7 +3398,7 @@ textarea.form-control {
 /* Recent Albums */
 
 .albums-slider.slider-band {
-    background-image: url(../images/bg/10.jpg);
+    background-image: url("../images/bg/10.21462ca65495.jpg");
     background-repeat: no-repeat;
     background-position: 100px 100px;
 }
@@ -3554,7 +3554,7 @@ textarea.form-control {
 
 .band.vocalist, 
 .band.vocalist {
-    background-image: url(../images/bg/3.jpg);
+    background-image: url("../images/bg/3.b47b4bc764b8.jpg");
     background-color: #e7eced;
 }
 
@@ -3808,7 +3808,7 @@ textarea.form-control {
 }
 
 .audio-album .jp-controls {
-    /*background-image: url(../images/album/1.jpg);*/
+    /*background-image: url("../images/album/1.5c5051fb9af1.jpg");*/
     background-color:rgb(255, 8, 0);
     background-size:contain;
     width: 110px;
@@ -4358,8 +4358,8 @@ a, button, .artists-overlay,
 
 @font-face {
     font-family: 'allerregular';
-    src: url('../fonts/aller.regular-webfont.woff2') format('woff2'),
-         url('../fonts/aller.regular-webfont.woff') format('woff');
+    src: url("../fonts/aller.regular-webfont.a8fb2605d302.woff2") format('woff2'),
+         url("../fonts/aller.regular-webfont.21c21052ab91.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -4367,8 +4367,8 @@ a, button, .artists-overlay,
 
 @font-face {
     font-family: 'aller_lightregular';
-    src: url('../fonts/aller_lt-webfont.woff2') format('woff2'),
-         url('../fonts/aller_lt-webfont.woff') format('woff');
+    src: url("../fonts/aller_lt-webfont.893047451422.woff2") format('woff2'),
+         url("../fonts/aller_lt-webfont.2a1f005f8aeb.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -4376,8 +4376,8 @@ a, button, .artists-overlay,
 
 @font-face {
     font-family: 'allerbold';
-    src: url('../fonts/aller_bd-webfont.woff2') format('woff2'),
-         url('../fonts/aller_bd-webfont.woff') format('woff');
+    src: url("../fonts/aller_bd-webfont.b344fee65606.woff2") format('woff2'),
+         url("../fonts/aller_bd-webfont.8ecd6844548d.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -4386,8 +4386,8 @@ a, button, .artists-overlay,
 
 @font-face {
     font-family: 'aller_displayregular';
-    src: url('../fonts/allerdisplay-webfont.woff2') format('woff2'),
-         url('../fonts/allerdisplay-webfont.woff') format('woff');
+    src: url("../fonts/allerdisplay-webfont.ae5274823500.woff2") format('woff2'),
+         url("../fonts/allerdisplay-webfont.82956226b463.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 

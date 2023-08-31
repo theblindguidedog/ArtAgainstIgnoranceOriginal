@@ -138,13 +138,13 @@ a:focus, button:focus, .btn:focus,
 
 .section-title {
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 60px;
 }
 
 .section-title h1,
 .page-title h1 {
-    font-size: 12px;
+    font-size: 24px;
     letter-spacing: 14px;
     color: #ed145b;
     font-family: 'allerbold';
@@ -2167,7 +2167,7 @@ textarea.form-control {
     color: #fff;
     margin-top: 0;
     margin-bottom: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: 'aller_displayregular';
 }
 
@@ -2279,7 +2279,7 @@ textarea.form-control {
     line-height: 18px;
     padding: 15px;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: 'aller_displayregular';    
 }
 
@@ -2562,16 +2562,16 @@ textarea.form-control {
 .showcase-section .section-title a i {
     font-size: 16px;
     color: #808080;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
 }
 
 .showcase-section .section-title a i {
     margin-right: 10px;
 }
 
-.showcase-section .section-title a span {
+/*.showcase-section .section-title a span {
     text-transform: uppercase;
-}
+}*/
 
 .showcase-section .section-title a:hover i,
 .showcase-section .section-title a:hover {
@@ -3601,7 +3601,7 @@ textarea.form-control {
 .vocalist h2 {
     font-size: 12px;
     letter-spacing: 5px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: 'allerbold';
     margin-top: 15px;
     margin-bottom: 30px;
@@ -3731,7 +3731,7 @@ textarea.form-control {
 
 .audio-album .left-content h2 {
     font-size: 24px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: 'aller_displayregular';
     margin-top: 0;
 }

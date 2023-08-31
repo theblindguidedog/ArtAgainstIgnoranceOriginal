@@ -42,6 +42,9 @@ def news_details_richard_dawkins(request):
 def news_details_utopians(request):
     return render(request, 'AAI_App/news_details_utopians.html', {})
 
+def artagainstignorance(request):
+    return redirect('https://artagainstignorance.art/', {})
+
 
 
 

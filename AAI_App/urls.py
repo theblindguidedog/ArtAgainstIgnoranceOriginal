@@ -15,7 +15,8 @@ urlpatterns = [
     path('news_details_aron_ra', views.news_details_aron_ra, name="news_details_aron_ra"),
     path('news_details_lawrence_krauss', views.news_details_lawrence_krauss, name="news_details_lawrence_krauss"),
     path('news_details_richard_dawkins', views.news_details_richard_dawkins, name="news_details_richard_dawkins"),
-    path('news_details_utopians', views.news_details_utopians, name="news_details_utopians"),  
+    path('news_details_utopians', views.news_details_utopians, name="news_details_utopians"),
+    path('artagainstignorance', views.artagainstignorance, name="artagainstignorance"),  
 ]
 
 
