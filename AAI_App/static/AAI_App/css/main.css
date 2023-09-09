@@ -154,7 +154,7 @@ a:focus, button:focus, .btn:focus,
 .page-title h2 {
     font-size: 40px; /* was 48px though it seems to make no difference */
     color: #000;
-    font-family: 'aller_displayregular';
+    font-family: 'Varela Round;'/*aller_displayregular*/
 }
 
 .page-title h1,
