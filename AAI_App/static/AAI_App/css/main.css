@@ -10,7 +10,7 @@
 
 /* Table of Contents
 ==================================================
-# Global 
+# Global (Now in custom.css)
 # Header 
 # Dropdown CSS 
 # Home Banner 
@@ -29,8 +29,10 @@
 
 
 /* ==========================================================================
- 	Global
+ 	Global (Now in custom.css)
  ========================================================================== */
+
+/*
 
 html,
 body {
@@ -138,7 +140,7 @@ a:focus, button:focus, .btn:focus,
 
 .section-title {
     text-align: center;
-    /*text-transform: uppercase;*/
+    
     margin-bottom: 60px;
 }
 
@@ -152,9 +154,8 @@ a:focus, button:focus, .btn:focus,
 
 .section-title h2,
 .page-title h2 {
-    font-size: 40px; /* was 48px though it seems to make no difference */
+    font-size: 40px; 
     color: #000;
-    /*font-family: aller_displayregular*/
 }
 
 .page-title h1,
@@ -180,8 +181,6 @@ a:focus, button:focus, .btn:focus,
     border-bottom: 30px solid #fff;  
 	z-index:10;
 }
-
-/*the next 3 blocks were : I changed them to ::*/
 
 .before-after::before {
     left: 0;
@@ -224,7 +223,7 @@ a:focus, button:focus, .btn:focus,
 
 .breadcrumb {
     z-index: 1;
-    background-image: url(../aai_images/bg/twitter_background.jpg); /* was bg/7.jpg */
+    background-image: url(../aai_images/bg/twitter_background.jpg);
     background-color: transparent;
     position: relative;
     margin-bottom: 0;
@@ -270,6 +269,8 @@ a:focus, button:focus, .btn:focus,
 .navbar-toggle .icon-bar {
     background-color: #ed145b;
 }
+
+
 
 /* ==========================================================================
  	Header
@@ -653,9 +654,11 @@ ul.sub-menu {
     width: 100%;
 }
 
+
 .artists-section .section-title {
     margin-bottom: 50px;
 }
+
 
 .artists-overlay {
     position: absolute;
@@ -781,11 +784,13 @@ ul.sub-menu {
 	color:#ed145b;
 }
 
+
 .gallery-section .section-title {
     margin-bottom: 20px;
     padding-top: 0px;
     text-align: left;
 }
+
 
 .gallery-section .nav-tabs {
     background-color: white;

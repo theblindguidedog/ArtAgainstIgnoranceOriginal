@@ -1,4 +1,84 @@
+/* Artists Section */
 
+.artists {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.artists img,
+.artist-image img {
+    width: 100%;
+}
+
+
+.artists-section .section-title {
+    margin-bottom: 50px;
+}
+
+
+.artists-overlay {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(237, 20, 91, 0.7);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.artists:hover .artists-overlay {
+	top: 0;
+}
+
+.artists-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.artists-info li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.artists-info li a:hover {
+    color: #000;
+}
+
+.artists-info a {
+    color: #fff;
+    font-size: 24px; /* was 34px */
+    line-height: 20px; /* was 30px */
+    margin-top: 0;
+    margin-bottom: 14px;
+    display: block;
+    font-family: 'aller_displayregular';
+}
+
+.artists-info h6 {
+    font-family: 'allerbold';
+    letter-spacing: 16px;
+    margin-bottom: 5px;
+}
+
+.artists-section .btn.btn-primary {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+ 
+.ferformers .pagination {
+    padding-top: 40px;
+}
 
 /* ==========================================================================
  	Global
@@ -196,7 +276,7 @@
  
  .breadcrumb {
      z-index: 1;
-     background-image: url(../aai_images/bg/twitter_background.jpg); /* was bg/7.jpg */
+     background-image: url("../aai_images/bg/twitter_background.02e01245f830.jpg"); /* was bg/7.jpg */
      background-color: transparent;
      position: relative;
      margin-bottom: 0;
@@ -406,7 +486,7 @@
 
     .grey-background {
         background-image:
-    url("../aai_images/slider/grey-background.jpg");
+    url("../aai_images/slider/grey-background.24d87f8fd532.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -493,12 +573,12 @@
 
     /* DON'T KNOW WHAT THESE ARE
     .no-web .body-base {
-        background-image: url(../aai_images/bg/2.jpg);
+        background-image: url("../aai_images/bg/2.24d87f8fd532.jpg");
         z-index: 1;    
     }
 
     .webp .body-base {
-        background-image: url(../aai_images/bg/webp/2.webp);
+        background-image: url("../aai_images/bg/webp/2.7c99e64601f9.webp");
         z-index:1;    
     }
     */

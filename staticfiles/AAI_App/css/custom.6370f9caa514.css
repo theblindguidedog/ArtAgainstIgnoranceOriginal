@@ -1,5 +1,3 @@
-
-
 /* ==========================================================================
  	Global
  ========================================================================== */
@@ -196,7 +194,7 @@
  
  .breadcrumb {
      z-index: 1;
-     background-image: url(../aai_images/bg/twitter_background.jpg); /* was bg/7.jpg */
+     background-image: url("../aai_images/bg/twitter_background.02e01245f830.jpg"); /* was bg/7.jpg */
      background-color: transparent;
      position: relative;
      margin-bottom: 0;
@@ -244,6 +242,13 @@
  }
 
 
+
+
+
+
+
+
+ 
 
 /* MY CSS */
 
@@ -406,7 +411,7 @@
 
     .grey-background {
         background-image:
-    url("../aai_images/slider/grey-background.jpg");
+    url("../aai_images/slider/grey-background.24d87f8fd532.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -493,12 +498,12 @@
 
     /* DON'T KNOW WHAT THESE ARE
     .no-web .body-base {
-        background-image: url(../aai_images/bg/2.jpg);
+        background-image: url("../aai_images/bg/2.24d87f8fd532.jpg");
         z-index: 1;    
     }
 
     .webp .body-base {
-        background-image: url(../aai_images/bg/webp/2.webp);
+        background-image: url("../aai_images/bg/webp/2.7c99e64601f9.webp");
         z-index:1;    
     }
     */
